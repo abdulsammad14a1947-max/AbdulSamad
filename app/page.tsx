@@ -1,7 +1,7 @@
 import LiquidBackground from "@/components/LiquidBackground";
 import Nav from "@/components/Nav";
-import SocialFloat from "@/components/SocialFloat";
 import Hero from "@/components/Hero";
+import LogoStrip from "@/components/LogoStrip";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Services from "@/components/Services";
@@ -18,9 +18,10 @@ export default function Page() {
     <>
       <LiquidBackground />
       <Nav />
-      <SocialFloat />
       <main>
         <Hero />
+        <LogoStrip />
+        <TechMarquee />
         <About />
         <Skills />
         <Services />
@@ -28,7 +29,6 @@ export default function Page() {
         <Projects />
         <Certifications />
         <Testimonials />
-        <TechMarquee />
         <Contact />
       </main>
       <Footer />

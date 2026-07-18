@@ -3,26 +3,19 @@
 import { useEffect, useState } from "react";
 
 const LINKS = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "Profile" },
-  { href: "#skills", label: "Expertise" },
+  { href: "#about", label: "About" },
+  { href: "#skills", label: "Skills" },
   { href: "#services", label: "Services" },
-  { href: "#experience", label: "Work" },
+  { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
   { href: "#certifications", label: "Certifications" },
-  { href: "#contact", label: "Contact" },
 ];
 
 export default function Nav() {
-  const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState("#home");
+  const [active, setActive] = useState("");
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
-    window.addEventListener("scroll", onScroll);
-    onScroll();
-
     const sections = LINKS.map((l) => document.querySelector(l.href)).filter(
       Boolean
     ) as HTMLElement[];
@@ -35,23 +28,16 @@ export default function Nav() {
       { rootMargin: "-45% 0px -50% 0px" }
     );
     sections.forEach((s) => obs.observe(s));
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      obs.disconnect();
-    };
+    return () => obs.disconnect();
   }, []);
 
   return (
     <div className="nav-wrap">
-      <nav className={`nav${scrolled ? " scrolled" : ""}`} id="nav">
-        <a href="#" className="nav-logo">
-          <svg viewBox="0 0 32 32" fill="none">
-            <rect x="1" y="1" width="30" height="30" rx="8" stroke="currentColor" strokeOpacity="0.4" />
-            <text x="16" y="22" textAnchor="middle" fill="#60A5FA" fontFamily="'Clash Display',Georgia,serif" fontSize="17" fontWeight="700">A</text>
-          </svg>
-          Samad
+      <nav className="nav" aria-label="Primary">
+        <a href="#home" className="nav-logo">
+          Abdul <em>Samad</em>
         </a>
-        <ul className={`nav-links${open ? " open" : ""}`} id="navLinks">
+        <ul className={`nav-links${open ? " open" : ""}`}>
           {LINKS.map((l) => (
             <li key={l.href}>
               <a
@@ -63,18 +49,24 @@ export default function Nav() {
               </a>
             </li>
           ))}
+          <li className="nav-mobile-contact">
+            <a href="#contact" onClick={() => setOpen(false)}>
+              Get in touch
+            </a>
+          </li>
         </ul>
         <button
-          className="nav-cta magnetic"
+          className="nav-cta"
           onClick={() =>
             document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
           }
         >
-          Let&rsquo;s Talk
+          Get in touch
         </button>
         <button
           className={`nav-toggle${open ? " active" : ""}`}
           aria-label="Menu"
+          aria-expanded={open}
           onClick={() => setOpen((o) => !o)}
         >
           <span />

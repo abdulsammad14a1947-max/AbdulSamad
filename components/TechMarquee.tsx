@@ -1,7 +1,6 @@
 import {
   Atom, Layers, Server, Code2, Bot, Link2, Container, Database, Leaf, FileCode2, Wind,
 } from "lucide-react";
-import Reveal from "@/components/ui/Reveal";
 
 const TECH = [
   { name: "React", icon: Atom },
@@ -20,23 +19,15 @@ const TECH = [
 export default function TechMarquee() {
   const loop = [...TECH, ...TECH];
   return (
-    <section className="section" id="tech">
-      <div className="container">
-        <Reveal><div className="section-label">08 &mdash; Tech Stack</div></Reveal>
-        <Reveal delay={0.1}>
-          <h2 className="section-title">Tools I build with</h2>
-        </Reveal>
+    <div className="tech-marquee" aria-label="Technologies I build with">
+      <div className="tech-track">
+        {loop.map((t, i) => (
+          <div className="tech-chip" key={i} aria-hidden={i >= TECH.length}>
+            <t.icon size={20} strokeWidth={1.5} aria-hidden="true" />
+            <span>{t.name}</span>
+          </div>
+        ))}
       </div>
-      <div className="tech-marquee">
-        <div className="tech-track">
-          {loop.map((t, i) => (
-            <div className="tech-chip glass" key={i}>
-              <t.icon className="si" />
-              <span>{t.name}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+    </div>
   );
 }

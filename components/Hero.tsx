@@ -2,7 +2,6 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import CountUp from "@/components/ui/CountUp";
-import ThreeScene from "@/components/ThreeScene";
 
 const LOGOS = [
   "/logo-images.png",
@@ -18,86 +17,69 @@ const LOGOS = [
 
 const STATS = [
   { target: 25, suffix: "", label: "Certifications" },
-  { target: 4, suffix: "", label: "Projects" },
   { target: 12, suffix: "", label: "Clients" },
-  { target: 3, suffix: "", label: "Years Exp." },
+  { target: 3, suffix: "", label: "Years" },
   { target: 8, suffix: "", label: "Frameworks" },
 ];
+
+const fadeUp = (delay: number) => ({
+  initial: { opacity: 0, y: 24 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] as const },
+});
 
 export default function Hero() {
   const reduce = useReducedMotion();
   return (
-    <section className="hero section" id="home">
+    <section className="hero" id="home">
       <div className="container">
         <div className="hero-grid">
-          <div className="hero-content">
-            <motion.div
-              className="hero-badge"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
-            >
-              <span /> Available for Projects
-            </motion.div>
+          <div>
+            <motion.p className="hero-status glass" {...fadeUp(0.1)}>
+              <span aria-hidden="true" /> Available for projects
+            </motion.p>
 
             <h1 className="hero-name">
-              {["Abdul", "Samad"].map((word, i) => (
-                <span className="line" key={word}>
-                  <motion.span
-                    initial={{ y: reduce ? 0 : "110%", opacity: reduce ? 0 : 1 }}
-                    animate={{ y: "0%", opacity: 1 }}
-                    transition={{ duration: 1.2, delay: 0.3 + i * 0.12, ease: [0.16, 1, 0.3, 1] }}
-                    className={i === 1 ? "grad" : undefined}
-                  >
-                    {word}
-                  </motion.span>
-                </span>
-              ))}
+              <span className="line">
+                <motion.span
+                  style={{ display: "inline-block" }}
+                  initial={{ y: reduce ? 0 : "110%", opacity: reduce ? 0 : 1 }}
+                  animate={{ y: "0%", opacity: 1 }}
+                  transition={{ duration: 1.1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+                >
+                  Abdul
+                </motion.span>
+              </span>
+              <span className="line">
+                <motion.span
+                  className="shine-text"
+                  style={{ display: "inline-block" }}
+                  initial={{ y: reduce ? 0 : "110%", opacity: reduce ? 0 : 1 }}
+                  animate={{ y: "0%", opacity: 1 }}
+                  transition={{ duration: 1.1, delay: 0.32, ease: [0.16, 1, 0.3, 1] }}
+                >
+                  Samad
+                </motion.span>
+              </span>
             </h1>
 
-            <motion.p
-              className="hero-title"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
-            >
+            <motion.p className="hero-title" {...fadeUp(0.55)}>
               Agentic AI Engineer
             </motion.p>
-            <motion.p
-              className="hero-desc"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.9, ease: "easeOut" }}
-            >
-              Building intelligent digital experiences through autonomous AI agents, workflow
-              automation, and modern web systems that feel like the future.
+            <motion.p className="hero-desc" {...fadeUp(0.65)}>
+              I design and ship autonomous AI agents, automation pipelines, and the
+              web systems around them.
             </motion.p>
-            <motion.div
-              className="hero-actions"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1, ease: "easeOut" }}
-            >
+            <motion.div className="hero-actions" {...fadeUp(0.75)}>
               <button
-                className="btn-primary magnetic"
+                className="btn-primary"
                 onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
               >
-                View Projects
-              </button>
-              <button
-                className="btn-secondary magnetic"
-                onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-              >
-                Let&rsquo;s Talk
+                View projects
               </button>
             </motion.div>
 
-            <motion.div
-              className="hero-stats"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.1, ease: "easeOut" }}
-            >
+            <motion.div className="hero-stats" {...fadeUp(0.85)}>
               {STATS.map((s) => (
                 <div className="hero-stat" key={s.label}>
                   <h3>
@@ -111,36 +93,28 @@ export default function Hero() {
 
           <motion.div
             className="hero-visual"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.1, delay: 0.6, ease: "easeOut" }}
+            initial={{ opacity: 0, y: 28 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="hero-three" aria-hidden="true">
-              <ThreeScene />
+            <figure className="hero-photo glass">
+              <img src="/hero-portrait.jpg" alt="Portrait of Abdul Samad" />
+              <div className="reflection" aria-hidden="true" />
+              <figcaption className="glass">
+                Abdul Samad
+                <small>Karachi, Pakistan</small>
+              </figcaption>
+            </figure>
+            <div className="float-badge glass fb1" aria-hidden="true">
+              <em>Agentic AI</em>
+              <small>Autonomous systems</small>
             </div>
-            <div className="orb o1" />
-            <div className="orb o2" />
-            <div className="glass-frame">
-              <img src="/profile.jpg" alt="Abdul Samad" />
-              <div className="reflection" />
-              <div className="shine" />
-              <div className="badge">
-                <span /> Open to work
-              </div>
+            <div className="float-badge glass fb2" aria-hidden="true">
+              <em>27</em> certifications
+              <small>Anthropic, Microsoft, IBM</small>
             </div>
           </motion.div>
         </div>
-        <div className="logo-marquee" aria-hidden="true">
-          <div className="logo-track">
-            {[...LOGOS, ...LOGOS].map((src, i) => (
-              <img key={i} src={src} alt="Partner logo" className="brand-logo" />
-            ))}
-          </div>
-        </div>
-      </div>
-      <div className="scroll-indicator">
-        <span>Scroll</span>
-        <div className="line" />
       </div>
     </section>
   );

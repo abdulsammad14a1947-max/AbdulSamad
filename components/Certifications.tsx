@@ -1,4 +1,3 @@
-import { BookOpen } from "lucide-react";
 import Reveal from "@/components/ui/Reveal";
 
 type Cert = { title: string; org: string; year: string };
@@ -37,6 +36,18 @@ const CATEGORIES: { name: string; items: Cert[] }[] = [
     ],
   },
   {
+    name: "AI Engineering",
+    items: [
+      { title: "Agentic AI Engineer", org: "SMIT", year: "2025" },
+      { title: "AI agent development on Azure", org: "Microsoft", year: "2025" },
+      { title: "Introduction to Generative AI Concepts", org: "Microsoft", year: "2025" },
+      { title: "Generative AI Complete Certification", org: "SkillUp", year: "2025" },
+      { title: "Intelligent by Design: Build an AI Agent", org: "IBM", year: "2025" },
+      { title: "Adjunct Work for You", org: "IBM", year: "2026" },
+      { title: "Build an AI Agent", org: "IBM", year: "2026" },
+    ],
+  },
+  {
     name: "Design",
     items: [
       { title: "Brand Identity Specialist", org: "Le Wagon", year: "2025" },
@@ -44,65 +55,57 @@ const CATEGORIES: { name: string; items: Cert[] }[] = [
     ],
   },
   {
-    name: "Business & Entrepreneurship",
+    name: "Business",
     items: [{ title: "Selling Online", org: "HP LIFE", year: "2025" }],
-  },
-  {
-    name: "AI Engineering",
-    items: [
-      { title: "Agentic AI Engineer", org: "SMIT", year: "2025" },
-      { title: "Get started with AI agent development on Azure", org: "Microsoft", year: "2025" },
-      { title: "Introduction to Generative AI Concepts", org: "Microsoft", year: "2025" },
-      { title: "Generative AI Complete Certification", org: "SkillUp", year: "2025" },
-    ],
-  },
-  {
-    name: "Certificate of Completion",
-    items: [
-      { title: "Intelligent by Design: Build an AI Agent", org: "IBM", year: "2025" },
-    ],
   },
 ];
 
 export default function Certifications() {
   const total = CATEGORIES.reduce((n, c) => n + c.items.length, 0);
+  const orgs = new Set(CATEGORIES.flatMap((c) => c.items.map((i) => i.org))).size;
   return (
     <section className="section" id="certifications">
       <div className="container">
         <Reveal>
-          <div className="section-label">06 &mdash; Certifications</div>
-        </Reveal>
-        <Reveal delay={0.1}>
           <h2 className="section-title">Certifications &amp; courses</h2>
           <p className="section-sub">
-            {total} certifications and courses completed across AI engineering, design, and applied AI fluency.
+            Completed across AI engineering, design, and applied AI fluency.
           </p>
         </Reveal>
-
-        {CATEGORIES.map((cat) => (
-          <div key={cat.name}>
-            <Reveal>
-              <div className="cat-label">
-                {cat.name} <span>({cat.items.length})</span>
-              </div>
-            </Reveal>
-            <div className="cert-grid">
-              {cat.items.map((c, i) => (
-                <Reveal key={c.title} delay={(i % 2) * 0.06}>
-                  <div className="cert-card glass">
-                    <div className="cert-ico">
-                      <BookOpen className="si" />
-                    </div>
-                    <div>
-                      <h4>{c.title}</h4>
-                      <p>{c.org} &middot; {c.year}</p>
-                    </div>
-                  </div>
-                </Reveal>
-              ))}
+        <Reveal delay={0.1}>
+          <div className="cert-summary">
+            <div className="glass">
+              <h3>{total}</h3>
+              <p>Certifications</p>
+            </div>
+            <div className="glass">
+              <h3>{orgs}</h3>
+              <p>Institutions</p>
+            </div>
+            <div className="glass">
+              <h3>{CATEGORIES.length}</h3>
+              <p>Disciplines</p>
             </div>
           </div>
-        ))}
+        </Reveal>
+        <Reveal delay={0.15}>
+          <div className="cert-columns">
+            {CATEGORIES.map((cat) => (
+              <div className="cert-block glass" key={cat.name}>
+                <h4>
+                  {cat.name} <small>{cat.items.length}</small>
+                </h4>
+                <ul>
+                  {cat.items.map((c) => (
+                    <li key={c.title}>
+                      {c.title} <small>{c.org}</small>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </Reveal>
       </div>
     </section>
   );
