@@ -9,6 +9,7 @@ import {
 import { profile } from "@/data/profile";
 import { certificates } from "@/data/certificates";
 import { projects } from "@/data/projects";
+import LogoTrain from "@/components/LogoTrain";
 
 const fadeUp = (delay: number) => ({
   initial: { opacity: 0, y: 22 },
@@ -241,6 +242,9 @@ export default function Hero() {
           ))}
         </div>
       </div>
+
+      {/* AI-tool logo train — icons scrolling like a train */}
+      <LogoTrain />
     </section>
   );
 }

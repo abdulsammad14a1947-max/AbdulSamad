@@ -139,7 +139,9 @@ export const projects: Project[] = [
       "Agent-agnostic tool discovery",
       "Secure scoped tool access",
     ],
-    images: [],
+    images: [
+      "/images/projects/mcp-servers/instagram-mcp-flow.png",
+    ],
   },
   {
     slug: "ai-teaching-assistant",
@@ -223,7 +225,9 @@ export const projects: Project[] = [
       "External integrations",
       "Human approval steps",
     ],
-    images: [],
+    images: [
+      "/images/projects/openclaw-automation/lead-generation.png",
+    ],
   },
   {
     slug: "hcm-lite",
@@ -286,6 +290,31 @@ export const projects: Project[] = [
     images: [
       "/images/projects/hcm-lite/product-overview.png",
       "/images/projects/hcm-lite/tech-stack.png",
+    ],
+  },
+  {
+    slug: "ai-video-editor",
+    name: "AI Video Editor",
+    category: "AI Agent Skill · Video Editing",
+    tagline:
+      "A free AI video editor that auto-cuts silent parts — edit your videos smarter, not harder.",
+    status: "shipped",
+    featured: true,
+    sections: {
+      problem:
+        "Turning raw footage into something watchable means scrubbing through the timeline and cutting silent or boring stretches by hand — the slowest, most tedious part of editing. The goal was an editor that removes that work automatically, stays completely free, and doesn't lock the user into a single AI provider.",
+      solution:
+        "A free AI video editor built as an AI agent skill: it detects and auto-cuts silent parts so the boring stretches disappear automatically, keeps the editing flow simple and fast, and works with any AI model — bring your favorite model instead of being locked to one. Built for personal use and offered 100% free.",
+    },
+    stack: ["AI agent skill", "Any AI model"],
+    features: [
+      "Auto-cut silent parts",
+      "Simple & fast editing",
+      "Works with any AI model",
+      "100% free",
+    ],
+    images: [
+      "/images/projects/ai-video-editor/banner.png",
     ],
   },
 ];
