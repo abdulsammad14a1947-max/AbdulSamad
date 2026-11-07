@@ -29,7 +29,6 @@ export const certCategories = [
   "Adobe",
   "HP LIFE",
   "AI Engineering",
-  "UI/UX & Brand Identity",
   "Other Verified",
 ] as const;
 
@@ -258,48 +257,11 @@ export const certificates: Certificate[] = [
     image: "/images/certificates/saylani-it-entrance-exam-appreciation.png",
   },
   {
-    slug: "saylani-result-card",
-    title: "IT Training Result Card",
-    institution: "Saylani Mass IT Training",
-    category: "Other Verified",
-    image: "/images/certificates/saylani-result-card.jpg",
-  },
-  {
     slug: "generative-ai-for-beginners",
     title: "Generative AI for Beginners",
     institution: null,
     category: "Other Verified",
     image: "/images/certificates/generative-ai-for-beginners.png",
-  },
-
-  // ---- UI/UX & Brand ----
-  {
-    slug: "intro-ui-ux-design",
-    title: "Introduction to UI/UX Design",
-    institution: null,
-    category: "UI/UX & Brand Identity",
-    image: "/images/certificates/intro-to-ui-ux-design.png",
-  },
-  {
-    slug: "ui-ux-design",
-    title: "UI/UX Design",
-    institution: null,
-    category: "UI/UX & Brand Identity",
-    image: "/images/certificates/ui-ux-design.jpg",
-  },
-  {
-    slug: "lewagon-brand-identity",
-    title: "Brand Identity Specialist",
-    institution: "Le Wagon",
-    category: "UI/UX & Brand Identity",
-    image: null,
-  },
-  {
-    slug: "lewagon-ui-ux",
-    title: "Complete UI/UX Design",
-    institution: "Le Wagon",
-    category: "UI/UX & Brand Identity",
-    image: null,
   },
 
   // ---- Other ----

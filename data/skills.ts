@@ -186,6 +186,18 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
+    id: "uiux",
+    name: "UI/UX & Design",
+    blurb: "Certified design training backing the engineering work.",
+    skills: [
+      { name: "UI/UX design", level: "familiar", note: "certified coursework" },
+      { name: "User interface design", level: "familiar" },
+      { name: "User experience design", level: "familiar" },
+      { name: "Brand identity", level: "familiar" },
+      { name: "Design fundamentals", level: "familiar" },
+    ],
+  },
+  {
     id: "mobile",
     name: "Mobile Application Engineering",
     blurb: "Cross-platform apps for Android and iOS.",

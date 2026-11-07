@@ -16,7 +16,7 @@ export default function SkillsDashboard() {
           <p className="eyebrow">Skills</p>
           <h2 className="section-title">Engineering skill dashboard.</h2>
           <p className="section-sub">
-            {totalSkills} technologies and practices across 14 domains. Every card
+            {totalSkills} technologies and practices across {cats.length} domains. Every card
             carries an honest status — no invented expertise.
           </p>
         </div>
