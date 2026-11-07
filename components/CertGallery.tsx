@@ -197,7 +197,7 @@ export default function CertGallery() {
                   <span className="proj-draft-note">verification link pending</span>
                 )}
                 {!openCert.image && (
-                  <span style={{ display: "inline-flex", alignItems: "center", gap: 6, color: "var(--coral)", fontSize: 12 }}>
+                  <span style={{ display: "inline-flex", alignItems: "center", gap: 6, color: "var(--lime)", fontSize: 12 }}>
                     <ArrowUpRight size={13} aria-hidden="true" /> add image to /public/images/certificates/
                   </span>
                 )}

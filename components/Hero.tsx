@@ -56,12 +56,12 @@ function AgentNetwork() {
     >
       <defs>
         <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#67C9FF" stopOpacity="0.5" />
-          <stop offset="100%" stopColor="#67C9FF" stopOpacity="0" />
+          <stop offset="0%" stopColor="#D2FF52" stopOpacity="0.5" />
+          <stop offset="100%" stopColor="#D2FF52" stopOpacity="0" />
         </radialGradient>
         <linearGradient id="edgeG" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="#67C9FF" stopOpacity="0.55" />
-          <stop offset="100%" stopColor="#A58BFF" stopOpacity="0.55" />
+          <stop offset="0%" stopColor="#D2FF52" stopOpacity="0.6" />
+          <stop offset="100%" stopColor="#1C46F5" stopOpacity="0.7" />
         </linearGradient>
       </defs>
 
@@ -93,15 +93,15 @@ function AgentNetwork() {
           )}
           {n.core ? (
             <>
-              <circle cx={n.x} cy={n.y} r={n.r} fill="rgba(103,201,255,0.14)" stroke="#67C9FF" strokeWidth="1.6" />
+              <circle cx={n.x} cy={n.y} r={n.r} fill="rgba(210,255,82,0.14)" stroke="#D2FF52" strokeWidth="1.6" />
               <text x={n.x} y={n.y + 5} textAnchor="middle" className="node-core-label">AI</text>
               <text x={n.x} y={n.y + 52} textAnchor="middle" className="node-label">ORCHESTRATOR</text>
             </>
           ) : (
             <>
-              <circle cx={n.x} cy={n.y} r={n.r} fill="rgba(255,255,255,0.06)" stroke="rgba(165,139,255,0.6)" strokeWidth="1.2" />
+              <circle cx={n.x} cy={n.y} r={n.r} fill="rgba(255,255,255,0.06)" stroke="rgba(28,70,245,0.85)" strokeWidth="1.4" />
               {!reduce && (
-                <circle cx={n.x} cy={n.y} r={4} fill="#A8F0C6">
+                <circle cx={n.x} cy={n.y} r={4} fill="#D2FF52">
                   <animate attributeName="opacity" values="0.4;1;0.4" dur={`${2 + (i % 5) * 0.5}s`} repeatCount="indefinite" />
                 </circle>
               )}
@@ -214,7 +214,7 @@ export default function Hero() {
             <div className="agentnet">
               <AgentNetwork />
               <div className="agentnet-chip chip-a" aria-hidden="true">
-                <span className="dot" style={{ background: "var(--mint)" }} />
+                <span className="dot" style={{ background: "var(--lime)" }} />
                 <span><b>Multi-agent</b> orchestration</span>
               </div>
               <div className="agentnet-chip chip-b" aria-hidden="true">
@@ -222,7 +222,7 @@ export default function Hero() {
                 <span><b>RAG</b> retrieval · vector DB</span>
               </div>
               <div className="agentnet-chip chip-c" aria-hidden="true">
-                <span className="dot" style={{ background: "var(--violet)" }} />
+                <span className="dot" style={{ background: "var(--text)" }} />
                 <span><b>MCP</b> tools · APIs · guarded execution</span>
               </div>
             </div>

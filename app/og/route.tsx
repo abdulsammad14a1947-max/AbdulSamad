@@ -17,12 +17,12 @@ export async function GET() {
           justifyContent: "center",
           padding: "0 80px",
           position: "relative",
-          backgroundColor: "#080B16",
-          color: "#F8FAFF",
+          backgroundColor: "#131313",
+          color: "#F7F7F7",
           fontFamily: "sans-serif",
         }}
       >
-        {/* decorative gradient layers (Satori-safe: single linear-gradient each) */}
+        {/* decorative glow layers (Satori-safe: single linear-gradient each) */}
         <div
           style={{
             position: "absolute",
@@ -32,7 +32,7 @@ export async function GET() {
             height: 640,
             borderRadius: 999,
             backgroundImage:
-              "linear-gradient(135deg, rgba(165,139,255,0.28), rgba(8,11,22,0))",
+              "linear-gradient(135deg, rgba(28,70,245,0.45), rgba(19,19,19,0))",
             display: "flex",
           }}
         />
@@ -45,7 +45,7 @@ export async function GET() {
             height: 700,
             borderRadius: 999,
             backgroundImage:
-              "linear-gradient(315deg, rgba(103,201,255,0.25), rgba(8,11,22,0))",
+              "linear-gradient(315deg, rgba(210,255,82,0.30), rgba(19,19,19,0))",
             display: "flex",
           }}
         />
@@ -58,7 +58,7 @@ export async function GET() {
             height: 560,
             borderRadius: 999,
             backgroundImage:
-              "linear-gradient(180deg, rgba(168,240,198,0.12), rgba(8,11,22,0))",
+              "linear-gradient(180deg, rgba(28,70,245,0.22), rgba(19,19,19,0))",
             display: "flex",
           }}
         />
@@ -69,11 +69,11 @@ export async function GET() {
               width: 14,
               height: 14,
               borderRadius: 999,
-              backgroundColor: "#67C9FF",
+              backgroundColor: "#D2FF52",
               display: "flex",
             }}
           />
-          <div style={{ fontSize: 22, color: "#AAB4CC", letterSpacing: 2 }}>
+          <div style={{ fontSize: 22, color: "#B5B5B5", letterSpacing: 2 }}>
             PORTFOLIO
           </div>
         </div>
@@ -82,16 +82,16 @@ export async function GET() {
           style={{
             fontSize: 34,
             marginTop: 18,
-            color: "#67C9FF",
+            color: "#D2FF52",
             fontWeight: 600,
           }}
         >
           Agentic AI Engineer · Forward Deployed Engineer
         </div>
-        <div style={{ fontSize: 22, color: "#AAB4CC", marginTop: 22 }}>
+        <div style={{ fontSize: 22, color: "#B5B5B5", marginTop: 22 }}>
           Multi-Agent Systems · RAG · MCP · Agent Harnesses · Full-Stack · Flutter
         </div>
-        <div style={{ fontSize: 18, color: "#6C7792", marginTop: 10 }}>
+        <div style={{ fontSize: 18, color: "#7E7E7E", marginTop: 10 }}>
           {`${profile.location} — ${profile.email}`}
         </div>
         {/* vertical accent bar */}
@@ -101,8 +101,8 @@ export async function GET() {
             right: 72,
             top: 90,
             bottom: 90,
-            width: 2,
-            backgroundColor: "rgba(103,201,255,0.55)",
+            width: 4,
+            backgroundColor: "#D2FF52",
           }}
         />
       </div>

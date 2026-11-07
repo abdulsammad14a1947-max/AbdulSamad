@@ -105,7 +105,7 @@ export default async function ProjectPage(
               {project.tagline}
             </p>
             <div className="case-tags">
-              <span className="lead-pill" style={{ borderColor: "rgba(168,240,198,0.4)", color: "var(--mint)" }}>
+              <span className="lead-pill" style={{ borderColor: "rgba(210,255,82,0.5)", color: "var(--lime)" }}>
                 {project.status === "shipped" ? "Shipped product" : project.status === "internal" ? "Internal / client build" : "In progress"}
               </span>
               {project.stack.slice(0, 8).map((t) => (
