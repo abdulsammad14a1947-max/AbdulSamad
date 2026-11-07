@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import {
-  Mail, Linkedin, Github, Instagram, Phone, Copy, Check, ArrowRight,
+  Mail, Linkedin, Github, Instagram, Phone, Copy, Check,
 } from "lucide-react";
 import { profile } from "@/data/profile";
 
@@ -93,11 +93,6 @@ export default function Contact() {
             <div className="contact-cta-col">
               <p className="mono-label">Fastest route</p>
               <h3>Email me directly — no forms, no middle layer.</h3>
-              <a className="btn-primary contact-big-btn" href={`mailto:${profile.email}`}>
-                <Mail size={17} strokeWidth={2} aria-hidden="true" />
-                Write an email
-                <ArrowRight size={16} strokeWidth={2} aria-hidden="true" />
-              </a>
               <button className="btn-ghost contact-big-btn" type="button" onClick={copyEmail}>
                 {copied ? (
                   <>
