@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AXON..</title>
+<meta name="description" content="AXON is a motion research studio: an open logbook of real-time rendering studies in particles, fluids and signed surfaces.">
+<link rel="icon" href="data:,">
+<style>
+:root{
+  --accent:#aa88ff;
+  --text:#dddddd;
+  --muted:#8a8a8a;
+  --chip:#1c1c1c;
+  --line:#2a2a2a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#000}
+body{
+  font-family:"SF Mono","Menlo","Consolas","Liberation Mono",monospace;
+  font-size:13px;line-height:1.35;letter-spacing:.02em;
+  text-transform:uppercase;color:var(--text);
+}
+canvas#bg{position:fixed;inset:0;z-index:0;display:block;width:100%;height:100%}
+.ui{position:fixed;inset:0;z-index:1;pointer-events:none}
+.ui a,.list{pointer-events:auto}
+.brand,.counter,.tags,.about{mix-blend-mode:plus-lighter}
+
+/* brand */
+.brand{position:absolute;top:24px;left:24px;display:flex;flex-direction:row;gap:14px;align-items:flex-start}
+.brand .mark{width:40px;height:40px;flex:none}
+.brand .name{font-size:20px;color:#fff;line-height:1.1}
+.brand .sub{font-size:11px;color:var(--muted);margin-top:2px}
+
+/* counter */
+.counter{
+  position:absolute;top:24px;right:24px;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line);background:#0a0a0a;
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;color:#fff;
+}
+
+/* tags */
+.tags{position:absolute;top:120px;left:24px;width:320px;display:flex;flex-wrap:wrap;gap:6px}
+.chip{
+  background:var(--chip);padding:5px 9px;font-size:11px;color:#cfcfcf;
+  border:0;font-family:inherit;letter-spacing:inherit;text-transform:inherit;cursor:pointer;
+}
+.chip.active{background:#e6e6e6;color:#000}
+
+/* card list */
+.list{position:absolute;top:250px;left:24px;bottom:0;width:320px;overflow-y:auto;scrollbar-width:none}
+.list::-webkit-scrollbar{display:none}
+.card{padding:18px 0;border-top:1px solid var(--line)}
+.thumb{height:160px;border-radius:2px;background:#0a0a0a;overflow:hidden}
+.thumb video{width:100%;height:100%;object-fit:cover;display:block}
+.meta{display:flex;justify-content:space-between;gap:16px;margin-top:10px;font-size:12px}
+.meta .l{color:#fff;text-align:left}
+.meta .r{color:var(--muted);text-align:right}
+.meta .l,.meta .r{white-space:pre-line}
+
+/* about column */
+.about{position:absolute;right:90px;top:50%;transform:translateY(-50%);width:380px}
+.about .blk{margin-bottom:2.2em}
+.about .blk:last-child{margin-bottom:0}
+.about h2{font-size:13px;color:var(--accent);font-weight:400;margin-bottom:1em}
+.about p{margin-bottom:1em;text-align:justify}
+.about p:last-child{margin-bottom:0}
+.about ul{list-style:inside;padding:0}
+.about a{display:block;text-decoration:underline;color:var(--text);margin:4px 0;transition:opacity .3s}
+.about a:hover{opacity:.7}
+
+/* responsive */
+@media (max-width:1100px){
+  .about{right:24px;width:320px}
+}
+@media (max-width:760px){
+  .list,.tags{display:none}
+  .about{left:24px;right:24px;bottom:24px;top:auto;transform:none;width:auto}
+  .about p{text-align:left}
+}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div class="ui">
+
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+      <circle cx="20" cy="20" r="18.5" fill="none" stroke="#fff" stroke-width="1.6"/>
+      <polygon fill="#fff" points="20,9 21.72,15.84 27.78,12.22 24.16,18.28 31,20 24.16,21.72 27.78,27.78 21.72,24.16 20,31 18.28,24.16 12.22,27.78 15.84,21.72 9,20 15.84,18.28 12.22,12.22 18.28,15.84"/>
+    </svg>
+    <div>
+      <div class="name">AXON</div>
+      <div class="sub">Motion research</div>
+    </div>
+  </div>
+
+  <div class="counter">07</div>
+
+  <div class="tags">
+    <button class="chip active" type="button">All</button>
+    <button class="chip" type="button">Light</button>
+    <button class="chip" type="button">Physics</button>
+    <button class="chip" type="button">Fluids</button>
+    <button class="chip" type="button">Grid</button>
+    <button class="chip" type="button">Audio</button>
+    <button class="chip" type="button">Volumes</button>
+    <button class="chip" type="button">Particles</button>
+    <button class="chip" type="button">Capture</button>
+    <button class="chip" type="button">Render</button>
+  </div>
+
+  <div class="list">
+    <div class="card">
+      <div class="thumb"><video src="https://pub-86dc5b5484314368ac5436a674b0d919.r2.dev/aaaf/oraciteslArea.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+      <div class="meta"><div class="l">Lattices
+zone</div><div class="r">Ambient light
+study</div></div>
+    </div>
+    <div class="card">
+      <div class="thumb"><video src="https://pub-86dc5b5484314368ac5436a674b0d919.r2.dev/aaaf/facet-glass-hero.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+      <div class="meta"><div class="l">Prism
+shell</div><div class="r">Dispersion hero
+render</div></div>
+    </div>
+    <div class="card">
+      <div class="thumb"><video src="https://pub-86dc5b5484314368ac5436a674b0d919.r2.dev/aaaf/stellarmind-hero.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+      <div class="meta"><div class="l">Nebular
+loop</div><div class="r">Procedural hero
+sequence</div></div>
+    </div>
+    <div class="card">
+      <div class="thumb"><video src="https://pub-86dc5b5484314368ac5436a674b0d919.r2.dev/aaaf/thedropthroughArea.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+      <div class="meta"><div class="l">Fall
+forward</div><div class="r">Dolly track
+study</div></div>
+    </div>
+  </div>
+
+  <div class="about">
+    <div class="blk">
+      <h2>info</h2>
+      <p>Studies are published as they are built and may not run on every device.</p>
+    </div>
+    <div class="blk">
+      <h2>aims</h2>
+      <p>An open logbook of real-time rendering research: surfaces, fluids, fields, and the little tools we build to shape them.</p>
+      <p>It is here to keep the work in view and to give each new project a place to grow.</p>
+    </div>
+    <div class="blk">
+      <h2>exploring</h2>
+      <ul>
+        <li>Signed surfaces</li>
+        <li>Cursor turbulence</li>
+        <li>Compute passes</li>
+        <li>Type in 3D space</li>
+      </ul>
+    </div>
+    <div class="blk">
+      <h2>connect</h2>
+      <a href="#">Index -&gt; AXON</a>
+      <a href="mailto:hello@axonlab.dev">Mail -&gt; hello@axonlab.dev</a>
+    </div>
+  </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+<script>
+/* ==================================================================
+   AXON — fluid simulation (drives the cursor interaction)
+   ================================================================== */
+(function () {
+"use strict";
+
+var canvas = document.getElementById("bg");
+var MOBILE = window.innerWidth <= 760;
+
+var CFG = {
+  SIM: 256, DYE: 512,
+  VEL_DISS: 0.98, DYE_DISS: 0.97, PRESS_DISS: 0.95,
+  ITER: 5, CURL: 30, DT: 1 / 60
+};
+
+var renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: false, alpha: false });
+var DPR = Math.min(window.devicePixelRatio || 1, 2);
+renderer.setPixelRatio(DPR);
+renderer.setSize(window.innerWidth, window.innerHeight, false);
+renderer.setClearColor(0x000000, 1);
+
+/* ---- fullscreen quad plumbing ---- */
+var fsScene = new THREE.Scene();
+var fsCam = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+var fsMesh = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), null);
+fsScene.add(fsMesh);
+
+var VERT = [
+  "varying vec2 vUv; varying vec2 vL; varying vec2 vR; varying vec2 vT; varying vec2 vB;",
+  "uniform vec2 texelSize;",
+  "void main(){",
+  "  vUv = uv;",
+  "  vL = vUv - vec2(texelSize.x, 0.0);",
+  "  vR = vUv + vec2(texelSize.x, 0.0);",
+  "  vT = vUv + vec2(0.0, texelSize.y);",
+  "  vB = vUv - vec2(0.0, texelSize.y);",
+  "  gl_Position = vec4(position.xy, 0.0, 1.0);",
+  "}"
+].join("\n");
+
+function mat(frag, uniforms) {
+  return new THREE.ShaderMaterial({
+    vertexShader: VERT, fragmentShader: frag,
+    uniforms: uniforms, depthTest: false, depthWrite: false
+  });
+}
+
+function makeRT(w, h) {
+  var rt = new THREE.WebGLRenderTarget(w, h, {
+    minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter,
+    format: THREE.RGBAFormat, type: THREE.HalfFloatType,
+    depthBuffer: false, stencilBuffer: false
+  });
+  rt.texture.generateMipmaps = false;
+  return rt;
+}
+function pair(w, h) { return { a: makeRT(w, h), b: makeRT(w, h) }; }
+function swap(p) { var t = p.a; p.a = p.b; p.b = t; }
+
+/* ---- render targets ---- */
+var velocity = pair(CFG.SIM, CFG.SIM);
+var dye      = pair(CFG.DYE, CFG.DYE);
+var pressure = pair(CFG.SIM, CFG.SIM);
+var divergenceRT = makeRT(CFG.SIM, CFG.SIM);
+var curlRT = makeRT(CFG.SIM, CFG.SIM);
+var maskRT = makeRT(window.innerWidth, window.innerHeight);
+
+var TEXEL_SIM = new THREE.Vector2(1 / CFG.SIM, 1 / CFG.SIM);
+
+/* ---- materials ---- */
+var copyMat = mat(
+  "uniform sampler2D uTexture; uniform float uValue; varying vec2 vUv;\n" +
+  "void main(){ gl_FragColor = uValue * texture2D(uTexture, vUv); }",
+  { texelSize: { value: TEXEL_SIM.clone() }, uTexture: { value: null }, uValue: { value: 1 } }
+);
+
+var splatMat = mat(
+  ["uniform sampler2D uTarget; uniform vec2 uPointA; uniform vec2 uPointB;",
+   "uniform vec3 uColor; uniform float uRadius; uniform float uAspect;",
+   "varying vec2 vUv;",
+   "float segDist(vec2 p, vec2 a, vec2 b){",
+   "  vec2 pa = p - a, ba = b - a;",
+   "  float h = clamp(dot(pa, ba) / max(dot(ba, ba), 1e-7), 0.0, 1.0);",
+   "  return length(pa - ba * h);",
+   "}",
+   "void main(){",
+   "  vec2 p = vUv; p.x *= uAspect;",
+   "  vec2 a = uPointA; a.x *= uAspect;",
+   "  vec2 b = uPointB; b.x *= uAspect;",
+   "  float d = segDist(p, a, b);",
+   "  float g = exp(-d * d / max(uRadius * uRadius, 1e-8));",
+   "  vec3 base = texture2D(uTarget, vUv).xyz;",
+   "  gl_FragColor = vec4(base + uColor * g, 1.0);",
+   "}"].join("\n"),
+  { texelSize: { value: TEXEL_SIM.clone() }, uTarget: { value: null },
+    uPointA: { value: new THREE.Vector2() }, uPointB: { value: new THREE.Vector2() },
+    uColor: { value: new THREE.Vector3() }, uRadius: { value: 0.03 }, uAspect: { value: 1 } }
+);
+
+var curlMat = mat(
+  ["uniform sampler2D uVelocity; varying vec2 vL; varying vec2 vR; varying vec2 vT; varying vec2 vB;",
+   "void main(){",
+   "  float L = texture2D(uVelocity, vL).y;",
+   "  float R = texture2D(uVelocity, vR).y;",
+   "  float T = texture2D(uVelocity, vT).x;",
+   "  float B = texture2D(uVelocity, vB).x;",
+   "  float vorticity = 0.5 * (R - L - T + B);",
+   "  gl_FragColor = vec4(vorticity, 0.0, 0.0, 1.0);",
+   "}"].join("\n"),
+  { texelSize: { value: TEXEL_SIM.clone() }, uVelocity: { value: null } }
+);
+
+var vorticityMat = mat(
+  ["uniform sampler2D uVelocity; uniform sampler2D uCurl;",
+   "uniform float uCurlStrength; uniform float uDt; varying vec2 vL; varying vec2 vR; varying vec2 vT; varying vec2 vB; varying vec2 vUv;",
+   "void main(){",
+   "  float L = texture2D(uCurl, vL).x;",
+   "  float R = texture2D(uCurl, vR).x;",
+   "  float T = texture2D(uCurl, vT).x;",
+   "  float B = texture2D(uCurl, vB).x;",
+   "  float C = texture2D(uCurl, vUv).x;",
+   "  vec2 force = 0.5 * vec2(abs(T) - abs(B), abs(R) - abs(L));",
+   "  force /= length(force) + 1e-5;",
+   "  force *= uCurlStrength * C;",
+   "  force.y *= -1.0;",
+   "  vec2 vel = texture2D(uVelocity, vUv).xy + force * uDt;",
+   "  vel = clamp(vel, -1000.0, 1000.0);",
+   "  gl_FragColor = vec4(vel, 0.0, 1.0);",
+   "}"].join("\n"),
+  { texelSize: { value: TEXEL_SIM.clone() }, uVelocity: { value: null }, uCurl: { value: null },
+    uCurlStrength: { value: CFG.CURL }, uDt: { value: CFG.DT } }
+);
+
+var divergenceMat = mat(
+  ["uniform sampler2D uVelocity; varying vec2 vL; varying vec2 vR; varying vec2 vT; varying vec2 vB;",
+   "void main(){",
+   "  float L = texture2D(uVelocity, vL).x;",
+   "  float R = texture2D(uVelocity, vR).x;",
+   "  float T = texture2D(uVelocity, vT).y;",
+   "  float B = texture2D(uVelocity, vB).y;",
+   "  vec2 C = texture2D(uVelocity, vL * 0.0 + vec2(0.5)).xy;",
+   "  gl_FragColor = vec4(0.5 * (R - L + T - B), 0.0, 0.0, 1.0);",
+   "}"].join("\n"),
+  { texelSize: { value: TEXEL_SIM.clone() }, uVelocity: { value: null } }
+);
+
+var pressureMat = mat(
+  ["uniform sampler2D uPressure; uniform sampler2D uDivergence; varying vec2 vL; varying vec2 vR; varying vec2 vT; varying vec2 vB; varying vec2 vUv;",
+   "void main(){",
+   "  float L = texture2D(uPressure, vL).x;",
+   "  float R = texture2D(uPressure, vR).x;",
+   "  float T = texture2D(uPressure, vT).x;",
+   "  float B = texture2D(uPressure, vB).x;",
+   "  float divergence = texture2D(uDivergence, vUv).x;",
+   "  float pressure = (L + R + B + T - divergence) * 0.25;",
+   "  gl_FragColor = vec4(pressure, 0.0, 0.0, 1.0);",
+   "}"].join("\n"),
+  { texelSize: { value: TEXEL_SIM.clone() }, uPressure: { value: null }, uDivergence: { value: null } }
+);
+
+var gradientMat = mat(
+  ["uniform sampler2D uPressure; uniform sampler2D uVelocity; varying vec2 vL; varying vec2 vR; varying vec2 vT; varying vec2 vB; varying vec2 vUv;",
+   "void main(){",
+   "  float L = texture2D(uPressure, vL).x;",
+   "  float R = texture2D(uPressure, vR).x;",
+   "  float T = texture2D(uPressure, vT).x;",
+   "  float B = texture2D(uPressure, vB).x;",
+   "  vec2 velocity = texture2D(uVelocity, vUv).xy - vec2(R - L, T - B);",
+   "  gl_FragColor = vec4(velocity, 0.0, 1.0);",
+   "}"].join("\n"),
+  { texelSize: { value: TEXEL_SIM.clone() }, uPressure: { value: null }, uVelocity: { value: null } }
+);
+
+var advectMat = mat(
+  ["uniform sampler2D uVelocity; uniform sampler2D uSource;",
+   "uniform vec2 uVelTexel; uniform float uDt; uniform float uDissipation; varying vec2 vUv;",
+   "void main(){",
+   "  vec2 vel = texture2D(uVelocity, vUv).xy;",
+   "  vec2 coord = vUv - uDt * vel * uVelTexel;",
+   "  gl_FragColor = uDissipation * texture2D(uSource, coord);",
+   "}"].join("\n"),
+  { texelSize: { value: TEXEL_SIM.clone() }, uVelocity: { value: null }, uSource: { value: null },
+    uVelTexel: { value: TEXEL_SIM.clone() }, uDt: { value: CFG.DT }, uDissipation: { value: 1 } }
+);
+
+var maskMat = mat(
+  ["uniform sampler2D uTexture; varying vec2 vUv;",
+   "void main(){",
+   "  vec3 c = texture2D(uTexture, vUv).rgb;",
+   "  gl_FragColor = vec4(c, max(max(c.r, c.g), c.b));",
+   "}"].join("\n"),
+  { texelSize: { value: new THREE.Vector2(1 / window.innerWidth, 1 / window.innerHeight) },
+    uTexture: { value: null } }
+);
+
+function pass(material, target) {
+  fsMesh.material = material;
+  renderer.setRenderTarget(target);
+  renderer.render(fsScene, fsCam);
+}
+function passSwap(material, p) { pass(material, p.b); swap(p); }
+
+/* ---- pointer / splat input ---- */
+var ptr = { x: -1, y: -1, px: -1, py: -1, has: false, lastSplat: -1e9 };
+
+function clampMap(x, a, b, c, d) {
+  var t = Math.min(Math.max((x - a) / (b - a), 0), 1);
+  return c + (d - c) * t;
+}
+
+function applySplats(now) {
+  if (!ptr.has) return;
+  var dx = ptr.x - ptr.px, dy = ptr.y - ptr.py;
+  var len = Math.sqrt(dx * dx + dy * dy);
+  if (len <= 0.01) return;
+
+  var ax = ptr.px, ay = ptr.py;
+  if (now - ptr.lastSplat > 50) { ax = ptr.x; ay = ptr.y; }  // stale: start at current point
+
+  var aspect = window.innerWidth / window.innerHeight;
+  var radius = clampMap(len, 0, 5, 0, 60) * 0.6 * (MOBILE ? 0.8 : 1) / 200;
+  var mult = clampMap(len, 0, 15, 0, 10);
+
+  var ux = function (v, w) { return v / w; };
+  var uy = function (v, h) { return 1 - v / h; };
+  var w = window.innerWidth, h = window.innerHeight;
+
+  splatMat.uniforms.uPointA.value.set(ux(ax, w), uy(ay, h));
+  splatMat.uniforms.uPointB.value.set(ux(ptr.x, w), uy(ptr.y, h));
+  splatMat.uniforms.uRadius.value = radius;
+  splatMat.uniforms.uAspect.value = aspect;
+
+  // velocity: colour (dx * mult, -dy * mult, 1), additive
+  splatMat.uniforms.uTarget.value = velocity.a.texture;
+  splatMat.uniforms.uColor.value.set(dx * mult, -dy * mult, 1);
+  passSwap(splatMat, velocity);
+
+  // density: white
+  splatMat.uniforms.uTarget.value = dye.a.texture;
+  splatMat.uniforms.uColor.value.set(1, 1, 1);
+  passSwap(splatMat, dye);
+
+  ptr.lastSplat = now;
+}
+
+/* ---- one fluid step ---- */
+function fluidStep() {
+  // curl
+  curlMat.uniforms.uVelocity.value = velocity.a.texture;
+  pass(curlMat, curlRT);
+
+  // vorticity confinement
+  vorticityMat.uniforms.uVelocity.value = velocity.a.texture;
+  vorticityMat.uniforms.uCurl.value = curlRT.texture;
+  passSwap(vorticityMat, velocity);
+
+  // divergence
+  divergenceMat.uniforms.uVelocity.value = velocity.a.texture;
+  pass(divergenceMat, divergenceRT);
+
+  // pressure decay
+  copyMat.uniforms.uTexture.value = pressure.a.texture;
+  copyMat.uniforms.uValue.value = CFG.PRESS_DISS;
+  passSwap(copyMat, pressure);
+
+  // jacobi pressure solve
+  pressureMat.uniforms.uDivergence.value = divergenceRT.texture;
+  for (var i = 0; i < CFG.ITER; i++) {
+    pressureMat.uniforms.uPressure.value = pressure.a.texture;
+    passSwap(pressureMat, pressure);
+  }
+
+  // projection
+  gradientMat.uniforms.uPressure.value = pressure.a.texture;
+  gradientMat.uniforms.uVelocity.value = velocity.a.texture;
+  passSwap(gradientMat, velocity);
+
+  // advect velocity
+  advectMat.uniforms.uVelocity.value = velocity.a.texture;
+  advectMat.uniforms.uSource.value = velocity.a.texture;
+  advectMat.uniforms.uDissipation.value = CFG.VEL_DISS;
+  passSwap(advectMat, velocity);
+
+  // advect dye
+  advectMat.uniforms.uVelocity.value = velocity.a.texture;
+  advectMat.uniforms.uSource.value = dye.a.texture;
+  advectMat.uniforms.uDissipation.value = CFG.DYE_DISS;
+  passSwap(advectMat, dye);
+
+  // density mask (viewport-sized, alpha = max channel)
+  maskMat.uniforms.uTexture.value = dye.a.texture;
+  pass(maskMat, maskRT);
+}
+
+/* ==================================================================
+   AXON — particle simulation (the hero)
+   ================================================================== */
+
+var POS_SIZE = MOBILE ? 128 : 512;           // 16,384 mobile / 262,144 desktop
+var N = POS_SIZE * POS_SIZE;
+var TEXEL_POS = new THREE.Vector2(1 / POS_SIZE, 1 / POS_SIZE);
+
+var posType = renderer.extensions.get("EXT_color_buffer_float")
+  ? THREE.FloatType : THREE.HalfFloatType;
+
+function makePosRT() {
+  var rt = new THREE.WebGLRenderTarget(POS_SIZE, POS_SIZE, {
+    minFilter: THREE.NearestFilter, magFilter: THREE.NearestFilter,
+    format: THREE.RGBAFormat, type: posType,
+    depthBuffer: false, stencilBuffer: false
+  });
+  rt.texture.generateMipmaps = false;
+  return rt;
+}
+var posRT = { a: makePosRT(), b: makePosRT() };
+
+/* origin data (initial random positions, uniform in [-1,1]^3) */
+var originData = new Float32Array(N * 4);
+var randData = new Float32Array(N * 4);
+var i, r1, r2, r3;
+for (i = 0; i < N; i++) {
+  r1 = Math.random() * 2 - 1; r2 = Math.random() * 2 - 1; r3 = Math.random() * 2 - 1;
+  originData[i * 4] = r1; originData[i * 4 + 1] = r2; originData[i * 4 + 2] = r3; originData[i * 4 + 3] = 1;
+  randData[i * 4] = Math.random();
+  randData[i * 4 + 1] = Math.random();
+  randData[i * 4 + 2] = Math.random();
+  randData[i * 4 + 3] = Math.random();
+}
+function dataTex(arr) {
+  var t = new THREE.DataTexture(arr, POS_SIZE, POS_SIZE, THREE.RGBAFormat, THREE.FloatType);
+  t.minFilter = THREE.NearestFilter; t.magFilter = THREE.NearestFilter;
+  t.generateMipmaps = false; t.needsUpdate = true;
+  return t;
+}
+var originTex = dataTex(originData);
+var randTex = dataTex(randData);
+
+/* ---- GLSL: signed distance function of the sculpted ring ---- */
+var GLSL_SHAPE = [
+  "float sdfShape(vec3 p){",
+  "  float a = atan(p.y, p.x);",
+  "  float R = 0.42 + 0.04 * sin(2.0 * a + 0.7);",                   // wavy ring radius
+  "  vec2 q = vec2(length(p.xy) - R, p.z - 0.10 * sin(2.0 * a + 0.7));", // ring undulates in z (twist)
+  "  float tube = 0.12 + 0.03 * cos(3.0 * a);",                      // varying tube = twist
+  "  float d = length(q) - tube;",
+  "  if (length(p) > 0.75) return length(p) - 0.65;",                // bound the field
+  "  return d;",
+  "}",
+  "vec3 sdfNormal(vec3 p){",
+  "  float h = 0.001;",
+  "  vec3 g = vec3(",
+  "    sdfShape(p + vec3(h, 0.0, 0.0)) - sdfShape(p - vec3(h, 0.0, 0.0)),",
+  "    sdfShape(p + vec3(0.0, h, 0.0)) - sdfShape(p - vec3(0.0, h, 0.0)),",
+  "    sdfShape(p + vec3(0.0, 0.0, h)) - sdfShape(p - vec3(0.0, 0.0, h)));",
+  "  return normalize(g + 1e-6);",
+  "}"
+].join("\n");
+
+/* ---- GLSL: analytic curl noise (three sine-sum potentials) ---- */
+var GLSL_CURL = [
+  "vec3 curlNoise(vec3 p){",
+  "  float a1 = 1.7 * cos(1.7 * p.x + 1.1 * p.y) + 0.7 * cos(2.3 * p.z + 0.7 * p.x);",
+  "  float b1 = 1.1 * cos(1.7 * p.x + 1.1 * p.y);",
+  "  float c1 = 2.3 * cos(2.3 * p.z + 0.7 * p.x);",
+  "  float a2 = 2.1 * cos(2.1 * p.x + 0.5 * p.y);",
+  "  float b2 = 1.9 * cos(1.9 * p.y + 1.3 * p.z) + 0.5 * cos(2.1 * p.x + 0.5 * p.y);",
+  "  float c2 = 1.3 * cos(1.9 * p.y + 1.3 * p.z);",
+  "  float a3 = 2.2 * cos(1.5 * p.z + 2.2 * p.x);",
+  "  float b3 = 1.3 * cos(1.3 * p.y + 1.8 * p.z);",
+  "  float c3 = 1.5 * cos(1.5 * p.z + 2.2 * p.x) + 1.8 * cos(1.3 * p.y + 1.8 * p.z);",
+  "  return normalize(vec3(b3 - c2, c1 - a3, a2 - b1) + 1e-6);",
+  "}"
+].join("\n");
+
+/* ---- particle simulation pass (one texel = one particle) ---- */
+var simMat = new THREE.ShaderMaterial({
+  vertexShader: VERT,
+  fragmentShader: [
+    GLSL_SHAPE,
+    GLSL_CURL,
+    "uniform sampler2D uPos; uniform sampler2D uOrigin; uniform sampler2D uRand;",
+    "uniform sampler2D uVel; uniform sampler2D uMask;",
+    "uniform mat4 uViewProj; uniform mat4 uModel; uniform mat3 uCamWorld;",
+    "uniform float uTime; uniform float uHZ;",
+    "varying vec2 vUv;",
+    "void main(){",
+    "  vec3 pos = texture2D(uPos, vUv).xyz;",
+    "  vec3 origin = texture2D(uOrigin, vUv).xyz;",
+    "  if (length(pos) > 0.7) pos *= 0.5;",
+    "  pos += curlNoise(pos * 0.1 + uTime * 0.05) * 0.0002 * uHZ;",
+    "  vec3 grad = sdfNormal(pos);",
+    "  float sdf = sdfShape(pos);",
+    "  pos += cross(normalize(pos + 1e-5), grad) * 0.0005;",         // swirl along surface
+    "  pos += -grad * sdf * 0.5;",                                   // pull onto surface
+    "  pos += (origin - pos) * 0.0002 * uHZ;",                       // spring to origin
+    "  vec4 world = uModel * vec4(pos, 1.0);",
+    "  vec4 clip = uViewProj * world;",
+    "  vec2 suv = clamp(clip.xy / max(clip.w, 1e-5) * 0.5 + 0.5, 0.0, 1.0);",
+    "  vec3 flow = vec3(texture2D(uVel, suv).xy, 0.0);",
+    "  flow = uCamWorld * flow;",
+    "  float mask = texture2D(uMask, suv).a;",                       // only where cursor has been
+    "  pos += flow * 0.0001 * uHZ * 0.4 * mask;",
+    "  gl_FragColor = vec4(pos, 1.0);",
+    "}"
+  ].join("\n"),
+  uniforms: {
+    texelSize: { value: TEXEL_POS.clone() },
+    uPos: { value: null }, uOrigin: { value: originTex }, uRand: { value: randTex },
+    uVel: { value: null }, uMask: { value: null },
+    uViewProj: { value: new THREE.Matrix4() }, uModel: { value: new THREE.Matrix4() },
+    uCamWorld: { value: new THREE.Matrix3() },
+    uTime: { value: 0 }, uHZ: { value: 1 }
+  },
+  depthTest: false, depthWrite: false
+});
+
+/* seed both position targets from the origin texture */
+copyMat.uniforms.uTexture.value = originTex;
+copyMat.uniforms.uValue.value = 1;
+pass(copyMat, posRT.a);
+pass(copyMat, posRT.b);
+
+/* ---- points geometry: position.xy = texel UV, aRandom vec4 ---- */
+var posArr = new Float32Array(N * 3);
+for (i = 0; i < N; i++) {
+  posArr[i * 3] = ((i % POS_SIZE) + 0.5) / POS_SIZE;
+  posArr[i * 3 + 1] = (Math.floor(i / POS_SIZE) + 0.5) / POS_SIZE;
+  posArr[i * 3 + 2] = 0;
+}
+var geo = new THREE.BufferGeometry();
+geo.setAttribute("position", new THREE.BufferAttribute(posArr, 3));
+geo.setAttribute("aRandom", new THREE.BufferAttribute(randData, 4));
+
+/* ---- matcap: runtime 64x64 grey lambert sphere (canvas, zero network) ---- */
+var mc = document.createElement("canvas");
+mc.width = 64; mc.height = 64;
+var mg = mc.getContext("2d");
+mg.fillStyle = "#000"; mg.fillRect(0, 0, 64, 64);
+var grd = mg.createRadialGradient(24, 21, 2, 32, 32, 34);
+grd.addColorStop(0, "#f4f4f4");
+grd.addColorStop(0.42, "#9c9c9c");
+grd.addColorStop(0.78, "#363636");
+grd.addColorStop(1, "#000000");
+mg.fillStyle = grd;
+mg.beginPath(); mg.arc(32, 32, 32, 0, Math.PI * 2); mg.fill();
+var matcapTex = new THREE.CanvasTexture(mc);
+matcapTex.minFilter = THREE.LinearFilter;
+matcapTex.magFilter = THREE.LinearFilter;
+matcapTex.generateMipmaps = false;
+
+/* ---- point rendering material ---- */
+var pointMat = new THREE.ShaderMaterial({
+  vertexShader: [
+    "uniform sampler2D uPos;",
+    "uniform float uDPR;",
+    "attribute vec4 aRandom;",
+    "varying vec4 vRand;",
+    "varying float vScale;",
+    "void main(){",
+    "  vRand = aRandom;",
+    "  vec3 pos = texture2D(uPos, position.xy).xyz;",
+    "  pos *= mix(1.0, 1.5, pow(aRandom.y, 150.0));",
+    "  vec4 mv = modelViewMatrix * vec4(pos, 1.0);",
+    "  float dist = length(mv.xyz);",
+    "  float scale = smoothstep(3.0, 15.0, dist) * mix(0.5, 1.0, aRandom.z);",
+    "  vScale = scale;",
+    "  gl_PointSize = 0.04 * uDPR * 2.0 * scale * (1000.0 / max(dist, 0.001));",
+    "  gl_Position = projectionMatrix * mv;",
+    "}"
+  ].join("\n"),
+  fragmentShader: [
+    "uniform sampler2D uMatcap;",
+    "uniform float uTime;",
+    "varying vec4 vRand;",
+    "varying float vScale;",
+    "vec3 overlay(vec3 b, vec3 t){",
+    "  return mix(2.0 * b * t, 1.0 - 2.0 * (1.0 - b) * (1.0 - t), step(0.5, b));",
+    "}",
+    "vec3 softLight(vec3 b, vec3 t){",
+    "  return mix(2.0 * b * t + b * b * (1.0 - 2.0 * t),",
+    "             2.0 * b * (1.0 - t) + sqrt(b) * (2.0 * t - 1.0), step(0.5, t));",
+    "}",
+    "void main(){",
+    "  vec2 pc = gl_PointCoord - 0.5;",
+    "  if (dot(pc, pc) > 0.25) discard;",
+    "  if (vScale < 0.1) discard;",
+    "  vec3 col = mix(vec3(0.0), vec3(0.2), vRand.x);",
+    "  col = mix(col, vec3(0.6, 0.45, 1.0), pow(vRand.z, 100.0));",  // sparse lavender
+    "  float sparkle = max(0.5 + (0.4 + sin(uTime * 4.0 + vRand.y * 20.0)) * pow(vRand.z, 10.0) * 2.5, 0.0);",
+    "  float ang = sin(uTime + vRand.z * 20.0) * 0.5 + 1.0;",
+    "  float ca = cos(ang), sa = sin(ang);",
+    "  vec2 uv = vec2(pc.x * ca - pc.y * sa, pc.x * sa + pc.y * ca) + 0.5;",
+    "  vec3 mat = texture2D(uMatcap, uv).rgb;",
+    "  col = mix(col, softLight(col, mat), 0.8);",
+    "  col = mix(col, overlay(col, mat), 0.2);",
+    "  col *= sparkle;",
+    "  gl_FragColor = vec4(col, 1.0);",
+    "}"
+  ].join("\n"),
+  uniforms: {
+    uPos: { value: posRT.a.texture },
+    uDPR: { value: DPR },
+    uTime: { value: 0 },
+    uMatcap: { value: matcapTex }
+  },
+  transparent: true,
+  blending: THREE.AdditiveBlending,
+  depthTest: true,
+  depthWrite: false
+});
+
+/* ==================================================================
+   Scene, camera, interaction, frame loop
+   ================================================================== */
+var scene = new THREE.Scene();
+var camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.1, 1000);
+var BASE_X = -1.17, BASE_Y = 0, BASE_Z = 6;
+camera.position.set(BASE_X, BASE_Y, BASE_Z);
+
+var group = new THREE.Group();
+group.position.set(0.343, 0.16, -1);
+group.rotation.set(-18 * Math.PI / 180, 18 * Math.PI / 180, 0);
+group.scale.set(2.9, 2.9, 3.1);
+scene.add(group);
+
+var points = new THREE.Points(geo, pointMat);
+points.frustumCulled = false;
+group.add(points);
+
+/* ---- pointer state feeds both fluid splat and camera gaze ---- */
+var mouseN = { x: 0, y: 0 };   // normalised -1..1 for gaze
+function setPtr(x, y) {
+  if (!ptr.has) { ptr.px = x; ptr.py = y; }
+  else { ptr.px = ptr.x; ptr.py = ptr.y; }
+  ptr.x = x; ptr.y = y; ptr.has = true;
+  mouseN.x = (x / window.innerWidth) * 2 - 1;
+  mouseN.y = (y / window.innerHeight) * 2 - 1;
+}
+window.addEventListener("pointermove", function (e) { setPtr(e.clientX, e.clientY); });
+window.addEventListener("touchstart", function (e) {
+  if (e.touches[0]) setPtr(e.touches[0].clientX, e.touches[0].clientY);
+}, { passive: true });
+window.addEventListener("touchmove", function (e) {
+  if (e.touches[0]) setPtr(e.touches[0].clientX, e.touches[0].clientY);
+}, { passive: true });
+
+/* ---- resize: renderer, camera aspect, fluid mask target ---- */
+window.addEventListener("resize", function () {
+  var w = window.innerWidth, h = window.innerHeight;
+  renderer.setSize(w, h, false);
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+  maskRT.setSize(w, h);
+  maskMat.uniforms.texelSize.value.set(1 / w, 1 / h);
+});
+
+/* ---- chips: click switches the active tag ---- */
+var chips = Array.prototype.slice.call(document.querySelectorAll(".chip"));
+chips.forEach(function (c) {
+  c.addEventListener("click", function () {
+    chips.forEach(function (x) { x.classList.remove("active"); });
+    c.classList.add("active");
+  });
+});
+
+/* ---- make sure every card video plays (muted autoplay fallback) ---- */
+Array.prototype.slice.call(document.querySelectorAll(".list video")).forEach(function (v) {
+  v.muted = true;
+  var p = v.play();
+  if (p && p.catch) p.catch(function () {});
+});
+
+/* ---- frame loop ---- */
+var lastT = performance.now();
+var simTime = 0;
+var viewProj = new THREE.Matrix4();
+
+function frame(now) {
+  requestAnimationFrame(frame);
+
+  var dt = Math.min((now - lastT) / 1000, 1 / 30);
+  lastT = now;
+  simTime += dt;
+  var HZ = dt * 60;
+
+  // fluid
+  applySplats(now);
+  fluidStep();
+
+  // camera gaze: base + (mouse.x -> -1) on x, (mouse.y -> +2) on y, lerp 0.05
+  var gx = BASE_X + (-mouseN.x);
+  var gy = BASE_Y + mouseN.y * 2;
+  camera.position.x += (gx - camera.position.x) * 0.05;
+  camera.position.y += (gy - camera.position.y) * 0.05;
+  camera.position.z = BASE_Z;
+  camera.lookAt(0, 0, 0);
+  camera.updateMatrixWorld();
+  group.updateMatrixWorld();
+
+  // particle sim pass
+  viewProj.multiplyMatrices(camera.projectionMatrix, camera.matrixWorldInverse);
+  simMat.uniforms.uPos.value = posRT.a.texture;
+  simMat.uniforms.uVel.value = velocity.a.texture;
+  simMat.uniforms.uMask.value = maskRT.texture;
+  simMat.uniforms.uViewProj.value.copy(viewProj);
+  simMat.uniforms.uModel.value.copy(group.matrixWorld);
+  simMat.uniforms.uCamWorld.value.setFromMatrix4(camera.matrixWorld);
+  simMat.uniforms.uTime.value = simTime;
+  simMat.uniforms.uHZ.value = HZ;
+  pass(simMat, posRT.b);
+  swap(posRT);
+
+  // render the cloud
+  renderer.setRenderTarget(null);
+  pointMat.uniforms.uPos.value = posRT.a.texture;
+  pointMat.uniforms.uTime.value = simTime;
+  renderer.render(scene, camera);
+}
+requestAnimationFrame(frame);
+
+})();
+</script>
+</body>
+</html>
