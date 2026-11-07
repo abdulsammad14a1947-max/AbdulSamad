@@ -3,7 +3,7 @@
 import { useMemo, useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import {
-  Search, X, ImageOff, BadgeCheck, ZoomIn, ArrowUpRight,
+  Search, X, ImageOff, ZoomIn, ArrowUpRight,
 } from "lucide-react";
 import { certificates, type Certificate } from "@/data/certificates";
 
@@ -184,18 +184,6 @@ export default function CertGallery() {
                 {openCert.image ? "Click the image to zoom in and read the fine print." : "Image pending upload."}
               </p>
               <div className="cert-modal-actions">
-                {openCert.verifyUrl ? (
-                  <a
-                    className="btn-primary"
-                    href={openCert.verifyUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <BadgeCheck size={15} aria-hidden="true" /> Verify credential
-                  </a>
-                ) : (
-                  <span className="proj-draft-note">verification link pending</span>
-                )}
                 {!openCert.image && (
                   <span style={{ display: "inline-flex", alignItems: "center", gap: 6, color: "var(--lime)", fontSize: 12 }}>
                     <ArrowUpRight size={13} aria-hidden="true" /> add image to /public/images/certificates/
