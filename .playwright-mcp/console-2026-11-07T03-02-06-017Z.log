@@ -1,0 +1,10 @@
+[     150ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ http://localhost:3000/_next/static/chunks/app/certifications/page-b1e6e3ed19017b8e.js:0
+[     231ms] ChunkLoadError: Loading chunk 736 failed.
+(error: http://localhost:3000/_next/static/chunks/app/certifications/page-b1e6e3ed19017b8e.js)
+    at r.f.j (http://localhost:3000/_next/static/chunks/webpack-8cc3e764896584c5.js:1:2891)
+    at http://localhost:3000/_next/static/chunks/webpack-8cc3e764896584c5.js:1:1211
+    at Array.reduce (<anonymous>)
+    at r.e (http://localhost:3000/_next/static/chunks/webpack-8cc3e764896584c5.js:1:1190)
+    at c (http://localhost:3000/_next/static/chunks/255-3981a3d1f3561bd8.js:1:136606)
+    at http://localhost:3000/_next/static/chunks/255-3981a3d1f3561bd8.js:1:151371
+    at t (http://localhost:3000/_next/static/chunks/255-3981a3d1f3561bd8.js:1:152829)

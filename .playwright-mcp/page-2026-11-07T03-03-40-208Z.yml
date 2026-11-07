@@ -1,0 +1,1118 @@
+- generic [active] [ref=f7e1]:
+  - link "Skip to content" [ref=f7e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - navigation "Primary" [ref=f7e4]:
+    - link [ref=f7e5] [cursor=pointer]:
+      - /url: /
+      - text: Abdul
+      - emphasis [ref=f7e7]: Samad
+    - button "Open menu" [ref=f7e8] [cursor=pointer]
+  - main [ref=f7e12]:
+    - generic [ref=f7e13]:
+      - generic [ref=f7e15]:
+        - generic [ref=f7e16]:
+          - paragraph [ref=f7e17]: Available for new projects
+          - heading "Abdul Samad" [level=1] [ref=f7e18]
+          - generic [ref=f7e20]:
+            - generic [ref=f7e21]: Agentic AI Engineer
+            - generic [ref=f7e22]: Forward Deployed Engineer
+            - generic [ref=f7e23]: AI Automation Engineer
+            - generic [ref=f7e24]: Full-Stack Developer
+            - generic [ref=f7e25]: Mobile App Developer
+          - heading "Engineering Intelligent Systems for the Real World." [level=2] [ref=f7e26]
+          - paragraph [ref=f7e27]: I build intelligent AI agents, autonomous workflows, multi-agent systems, retrieval-augmented applications, and production-ready software solutions. From technical discovery and system architecture to application development, integrations, deployment, and continuous improvement, I turn complex requirements into practical technology products.
+          - generic [ref=f7e28]:
+            - link "Explore Projects" [ref=f7e29] [cursor=pointer]:
+              - /url: "#projects"
+            - link "Contact Me" [ref=f7e32] [cursor=pointer]:
+              - /url: "#contact"
+          - generic [ref=f7e33]:
+            - link "LinkedIn" [ref=f7e34] [cursor=pointer]:
+              - /url: https://linkedin.com/in/abdul-samad-b66b7b373
+            - link "GitHub" [ref=f7e39] [cursor=pointer]:
+              - /url: https://github.com/abdulsammad-lgtm
+            - generic [ref=f7e43]: Karachi, Pakistan
+          - generic [ref=f7e47]:
+            - generic [ref=f7e48]:
+              - heading "4" [level=3] [ref=f7e49]
+              - paragraph [ref=f7e50]: Years overall exp.
+            - generic [ref=f7e51]:
+              - heading "4" [level=3] [ref=f7e52]
+              - paragraph [ref=f7e53]: Featured builds
+            - generic [ref=f7e54]:
+              - heading "32" [level=3] [ref=f7e55]
+              - paragraph [ref=f7e56]: Verified certificates
+            - generic [ref=f7e57]:
+              - heading "10" [level=3] [ref=f7e58]
+              - paragraph [ref=f7e59]: Agents in prod. build
+        - generic [ref=f7e61]:
+          - img "Diagram of an orchestration agent connected to memory, RAG retrieval, tool registry, sub-agents, LLMs, databases, MCP servers and backend APIs" [ref=f7e62]:
+            - generic [ref=f7e71]:
+              - generic [ref=f7e74]: AI
+              - generic [ref=f7e75]: ORCHESTRATOR
+            - generic [ref=f7e76]: Memory
+            - generic [ref=f7e80]: RAG
+            - generic [ref=f7e84]: Tools
+            - generic [ref=f7e88]: Agents
+            - generic [ref=f7e92]: LLMs
+            - generic [ref=f7e96]: DBs
+            - generic [ref=f7e100]: MCP
+            - generic [ref=f7e104]: APIs
+          - generic [ref=f7e110]: Multi-agent orchestration
+          - generic [ref=f7e113]: RAG retrieval · vector DB
+          - generic [ref=f7e116]: MCP tools · APIs · guarded execution
+      - generic "Core technologies" [ref=f7e117]:
+        - generic [ref=f7e118]:
+          - generic [ref=f7e119]: Python
+          - generic [ref=f7e123]: FastAPI
+          - generic [ref=f7e128]: OpenAI Agents SDK
+          - generic [ref=f7e132]: MCP
+          - generic [ref=f7e139]: Qdrant
+          - generic [ref=f7e144]: Next.js
+          - generic [ref=f7e149]: Flutter
+          - generic [ref=f7e160]: OpenClaw
+          - generic [ref=f7e165]: n8n
+          - generic [ref=f7e170]: RAG
+          - generic [aria-hidden] [ref=f7e175]: Python
+          - generic [aria-hidden] [ref=f7e179]: FastAPI
+          - generic [aria-hidden] [ref=f7e184]: OpenAI Agents SDK
+          - generic [aria-hidden] [ref=f7e188]: MCP
+          - generic [aria-hidden] [ref=f7e195]: Qdrant
+          - generic [aria-hidden] [ref=f7e200]: Next.js
+          - generic [aria-hidden] [ref=f7e205]: Flutter
+          - generic [aria-hidden] [ref=f7e216]: OpenClaw
+          - generic [aria-hidden] [ref=f7e221]: n8n
+          - generic [aria-hidden] [ref=f7e226]: RAG
+    - generic [ref=f7e232]:
+      - generic [ref=f7e233]:
+        - paragraph [ref=f7e234]: About
+        - heading "Engineer for intelligent systems, end to end." [level=2] [ref=f7e235]
+      - generic [ref=f7e236]:
+        - img "Portrait of Abdul Samad, Agentic AI Engineer based in Karachi, Pakistan" [ref=f7e239]
+        - generic [ref=f7e240]:
+          - paragraph [ref=f7e241]: I'm Abdul Samad, an Agentic AI Engineer and Forward Deployed Engineer based in Karachi, Pakistan. I build practical intelligent systems — autonomous agents that do real work, multi-agent architectures that cooperate on hard problems, and retrieval pipelines that keep AI answers grounded in real material instead of generated guesses.
+          - paragraph [ref=f7e242]: "With 4 years of overall professional experience, I work comfortably across the whole stack: Python and FastAPI services, React and Next.js applications, Flutter mobile apps, PostgreSQL and vector databases, and the deployment pipelines that hold everything together. Anthropic's Model Context Protocol has become my standard way of connecting agents to the external world — I run MCP servers I built for Instagram, WordPress and programmatic video."
+          - paragraph [ref=f7e243]: "What draws me to Forward Deployed Engineering is the full arc: sitting with a customer's operational problem, translating it into an architecture, prototyping fast, and then shipping and maintaining the thing in production. I've built agent harnesses with execution loops, tool permissions, checkpointing and human-in-the-loop approvals, and I care about the unglamorous parts — evaluation, guardrails, observability — because that's what makes agents trustworthy."
+          - paragraph [ref=f7e244]: "My professional development is continuous and verifiable: 32 certificates from Anthropic, Microsoft, IBM, Adobe and HP, including Anthropic's complete AI Fluency and Claude development tracks."
+          - generic [ref=f7e245]:
+            - generic [ref=f7e246]:
+              - generic [ref=f7e247]: Based in
+              - generic [ref=f7e248]: Karachi, Pakistan
+            - generic [ref=f7e249]:
+              - generic [ref=f7e250]: Email
+              - link "abdulsammad14a1947@gmail.com" [ref=f7e252] [cursor=pointer]:
+                - /url: mailto:abdulsammad14a1947@gmail.com
+            - generic [ref=f7e253]:
+              - generic [ref=f7e254]: Certifications
+              - generic [ref=f7e255]: 32 verified certificates
+            - generic [ref=f7e256]:
+              - generic [ref=f7e257]: Availability
+              - generic [ref=f7e258]: Available for new projects
+    - generic [ref=f7e260]:
+      - generic [ref=f7e261]:
+        - paragraph [ref=f7e262]: Engineering
+        - heading "Three specializations, one engineering practice." [level=2] [ref=f7e263]
+        - paragraph [ref=f7e264]: Everything I build sits at the intersection of agentic AI, retrieval engineering, and full-stack application development.
+      - tablist "Engineering specializations" [ref=f7e265]:
+        - tab "Primary specialization Agentic AI & Forward Deployed Engineering" [selected] [ref=f7e266] [cursor=pointer]:
+          - text: Primary specialization
+          - generic [ref=f7e267]: Agentic AI & Forward Deployed Engineering
+        - tab "Second specialization RAG, AI/ML & Automation Engineering" [ref=f7e268] [cursor=pointer]:
+          - text: Second specialization
+          - generic [ref=f7e269]: RAG, AI/ML & Automation Engineering
+        - tab "Equal-stack specialization Full-Stack & Mobile Application Engineering" [ref=f7e270] [cursor=pointer]:
+          - text: Equal-stack specialization
+          - generic [ref=f7e271]: Full-Stack & Mobile Application Engineering
+      - generic [ref=f7e272]:
+        - paragraph [ref=f7e273]: "My core work: architecting and shipping autonomous AI agents, and doing the forward-deployed engineering that takes them into a customer's real environment — from technical discovery to production."
+        - generic [ref=f7e274]:
+          - generic [ref=f7e275]:
+            - heading "Agentic AI" [level=4] [ref=f7e276]
+            - generic [ref=f7e277]:
+              - generic [ref=f7e278]: Agentic AI architecture
+              - generic [ref=f7e279]: Single-agent systems
+              - generic [ref=f7e280]: Multi-agent systems
+              - generic [ref=f7e281]: Agent orchestration & delegation
+              - generic [ref=f7e282]: Planning and reasoning
+              - generic [ref=f7e283]: Tool calling
+              - generic [ref=f7e284]: Structured outputs
+              - generic [ref=f7e285]: Agent communication
+              - generic [ref=f7e286]: Workflow execution
+              - generic [ref=f7e287]: LLM integration
+              - generic [ref=f7e288]: AI-powered applications
+          - generic [ref=f7e289]:
+            - heading "Forward Deployed Engineering" [level=4] [ref=f7e290]
+            - generic [ref=f7e291]:
+              - generic [ref=f7e292]: Customer technical discovery
+              - generic [ref=f7e293]: Operational problem analysis
+              - generic [ref=f7e294]: Requirements analysis
+              - generic [ref=f7e295]: Solution architecture
+              - generic [ref=f7e296]: Rapid AI prototyping
+              - generic [ref=f7e297]: Customer-specific integrations
+              - generic [ref=f7e298]: Enterprise API integration
+              - generic [ref=f7e299]: Production implementation
+              - generic [ref=f7e300]: Deployment & optimization
+              - generic [ref=f7e301]: Cross-functional collaboration
+              - generic [ref=f7e302]: Business requirements → working software
+          - generic [ref=f7e303]:
+            - heading "Agent Harness Engineering" [level=4] [ref=f7e304]
+            - generic [ref=f7e305]:
+              - generic [ref=f7e306]: Agent runtime architecture
+              - generic [ref=f7e307]: Tool execution environments
+              - generic [ref=f7e308]: Execution loops
+              - generic [ref=f7e309]: Observe → plan → act → evaluate
+              - generic [ref=f7e310]: State management
+              - generic [ref=f7e311]: Checkpointing
+              - generic [ref=f7e312]: Retry mechanisms & error recovery
+              - generic [ref=f7e313]: Tool registries
+              - generic [ref=f7e314]: Permissions & access control
+              - generic [ref=f7e315]: Sandboxing
+              - generic [ref=f7e316]: Human-in-the-loop approvals
+              - generic [ref=f7e317]: Tracing & observability
+              - generic [ref=f7e318]: Agent evaluation
+          - generic [ref=f7e319]:
+            - heading "Context Engineering & Management" [level=4] [ref=f7e320]
+            - generic [ref=f7e321]:
+              - generic [ref=f7e322]: Context selection & assembly
+              - generic [ref=f7e323]: Context windows
+              - generic [ref=f7e324]: Context compression
+              - generic [ref=f7e325]: Conversation history
+              - generic [ref=f7e326]: Persistent memory
+              - generic [ref=f7e327]: Short & long-term memory
+              - generic [ref=f7e328]: Session management
+              - generic [ref=f7e329]: Retrieval-based context
+              - generic [ref=f7e330]: Summarization
+              - generic [ref=f7e331]: Context isolation
+          - generic [ref=f7e332]:
+            - heading "Multi-Agent Systems" [level=4] [ref=f7e333]
+            - generic [ref=f7e334]:
+              - generic [ref=f7e335]: Supervisor architecture
+              - generic [ref=f7e336]: Role-based agents
+              - generic [ref=f7e337]: Agent delegation
+              - generic [ref=f7e338]: Shared memory
+              - generic [ref=f7e339]: Sequential & parallel workflows
+              - generic [ref=f7e340]: Collaborative agents
+              - generic [ref=f7e341]: Task routing
+              - generic [ref=f7e342]: Agent communication
+              - generic [ref=f7e343]: Multi-agent error handling
+          - generic [ref=f7e344]:
+            - heading "MCP & Tool Integration" [level=4] [ref=f7e345]
+            - generic [ref=f7e346]:
+              - generic [ref=f7e347]: Model Context Protocol
+              - generic [ref=f7e348]: MCP server development
+              - generic [ref=f7e349]: MCP clients
+              - generic [ref=f7e350]: Custom tool development
+              - generic [ref=f7e351]: Third-party API integration
+              - generic [ref=f7e352]: Browser automation
+              - generic [ref=f7e353]: External integrations
+              - generic [ref=f7e354]: Secure tool access
+    - generic [ref=f7e356]:
+      - generic [ref=f7e357]:
+        - paragraph [ref=f7e358]: Skills
+        - heading "Engineering skill dashboard." [level=2] [ref=f7e359]
+        - paragraph [ref=f7e360]: 137 technologies and practices across 14 domains. Every card carries an honest status — no invented expertise.
+      - generic [ref=f7e361]:
+        - generic [ref=f7e362]: "Proficiency status:"
+        - generic [ref=f7e363]:
+          - generic [ref=f7e364]: Hands-on
+          - text: built & shipped in real work
+        - generic [ref=f7e365]:
+          - generic [ref=f7e366]: Familiar
+          - text: working knowledge
+        - generic [ref=f7e367]:
+          - generic [ref=f7e368]: Learning
+          - text: actively studying
+      - group "Filter skills by category" [ref=f7e369]:
+        - button "All domains" [ref=f7e370] [cursor=pointer]
+        - button "Agentic AI" [ref=f7e371] [cursor=pointer]
+        - button "Forward Deployed Engineering" [ref=f7e372] [cursor=pointer]
+        - button "Agent Harness Engineering" [ref=f7e373] [cursor=pointer]
+        - button "Context Engineering" [ref=f7e374] [cursor=pointer]
+        - button "RAG & Vector Databases" [ref=f7e375] [cursor=pointer]
+        - button "AI & Machine Learning" [ref=f7e376] [cursor=pointer]
+        - button "Python & Backend Engineering" [ref=f7e377] [cursor=pointer]
+        - button "MCP & Tool Integration" [ref=f7e378] [cursor=pointer]
+        - button "Multi-Agent Architecture" [ref=f7e379] [cursor=pointer]
+        - button "Frontend Engineering" [ref=f7e380] [cursor=pointer]
+        - button "Mobile Application Engineering" [ref=f7e381] [cursor=pointer]
+        - button "Database Engineering" [ref=f7e382] [cursor=pointer]
+        - button "Automation Engineering" [ref=f7e383] [cursor=pointer]
+        - button "Cloud & Deployment" [ref=f7e384] [cursor=pointer]
+        - button "Testing & Security" [ref=f7e385] [cursor=pointer]
+      - generic [ref=f7e386]:
+        - article [ref=f7e387]:
+          - heading "Agentic AI" [level=4] [ref=f7e388]
+          - paragraph [ref=f7e389]: Autonomous systems that plan, act, and self-correct.
+          - generic [ref=f7e390]:
+            - generic [ref=f7e391]: Agentic AI architecture
+            - generic [ref=f7e392]: Hands-on
+          - generic [ref=f7e393]:
+            - generic [ref=f7e394]: Single-agent systems
+            - generic [ref=f7e395]: Hands-on
+          - generic [ref=f7e396]:
+            - generic [ref=f7e397]: Multi-agent systems
+            - generic [ref=f7e398]: Hands-on
+          - generic [ref=f7e399]:
+            - generic [ref=f7e400]: Agent orchestration
+            - generic [ref=f7e401]: Hands-on
+          - generic [ref=f7e402]:
+            - generic [ref=f7e403]: Agent delegation & routing
+            - generic [ref=f7e404]: Hands-on
+          - generic [ref=f7e405]:
+            - generic [ref=f7e406]: Planning & reasoning loops
+            - generic [ref=f7e407]: Hands-on
+          - generic [ref=f7e408]:
+            - generic [ref=f7e409]: Tool calling
+            - generic [ref=f7e410]: Hands-on
+          - generic [ref=f7e411]:
+            - generic [ref=f7e412]: Structured outputs
+            - generic [ref=f7e413]: Hands-on
+          - generic [ref=f7e414]:
+            - generic [ref=f7e415]: LLM integration
+            - generic [ref=f7e416]: Hands-on
+          - generic [ref=f7e417]:
+            - generic [ref=f7e418]: AI-powered applications
+            - generic [ref=f7e419]: Hands-on
+        - article [ref=f7e420]:
+          - heading "Forward Deployed Engineering" [level=4] [ref=f7e421]
+          - paragraph [ref=f7e422]: From customer discovery to production deployment.
+          - generic [ref=f7e423]:
+            - generic [ref=f7e424]: Customer technical discovery
+            - generic [ref=f7e425]: Hands-on
+          - generic [ref=f7e426]:
+            - generic [ref=f7e427]: Operational problem analysis
+            - generic [ref=f7e428]: Hands-on
+          - generic [ref=f7e429]:
+            - generic [ref=f7e430]: Technical requirement analysis
+            - generic [ref=f7e431]: Hands-on
+          - generic [ref=f7e432]:
+            - generic [ref=f7e433]: Solution architecture
+            - generic [ref=f7e434]: Hands-on
+          - generic [ref=f7e435]:
+            - generic [ref=f7e436]: Rapid AI prototyping
+            - generic [ref=f7e437]: Hands-on
+          - generic [ref=f7e438]:
+            - generic [ref=f7e439]: Enterprise API integration
+            - generic [ref=f7e440]: Hands-on
+          - generic [ref=f7e441]:
+            - generic [ref=f7e442]: Production deployment
+            - generic [ref=f7e443]: Hands-on
+          - generic [ref=f7e444]:
+            - generic [ref=f7e445]: Cross-functional collaboration
+            - generic [ref=f7e446]: Hands-on
+          - generic [ref=f7e447]:
+            - generic [ref=f7e448]: Business → software translation
+            - generic [ref=f7e449]: Hands-on
+        - article [ref=f7e450]:
+          - heading "Agent Harness Engineering" [level=4] [ref=f7e451]
+          - paragraph [ref=f7e452]: Runtimes, execution loops, and reliability.
+          - generic [ref=f7e453]:
+            - generic [ref=f7e454]: Agent runtime architecture
+            - generic [ref=f7e455]: Hands-on
+          - generic [ref=f7e456]:
+            - generic [ref=f7e457]: Tool execution environments
+            - generic [ref=f7e458]: Hands-on
+          - generic [ref=f7e459]:
+            - generic [ref=f7e460]: Observe → plan → act → evaluate loops
+            - generic [ref=f7e461]: Hands-on
+          - generic [ref=f7e462]:
+            - generic [ref=f7e463]: State management
+            - generic [ref=f7e464]: Hands-on
+          - generic [ref=f7e465]:
+            - generic [ref=f7e466]: Checkpointing & retries
+            - generic [ref=f7e467]: Hands-on
+          - generic [ref=f7e468]:
+            - generic [ref=f7e469]: Error recovery
+            - generic [ref=f7e470]: Hands-on
+          - generic [ref=f7e471]:
+            - generic [ref=f7e472]: Tool registries
+            - generic [ref=f7e473]: Familiar
+          - generic [ref=f7e474]:
+            - generic [ref=f7e475]: Permissions & access control
+            - generic [ref=f7e476]: Hands-on
+          - generic [ref=f7e477]:
+            - generic [ref=f7e478]: Sandboxing
+            - generic [ref=f7e479]: Familiar
+          - generic [ref=f7e480]:
+            - generic [ref=f7e481]: Human-in-the-loop approvals
+            - generic [ref=f7e482]: Hands-on
+          - generic [ref=f7e483]:
+            - generic [ref=f7e484]: Tracing & observability
+            - generic [ref=f7e485]: Familiar
+          - generic [ref=f7e486]:
+            - generic [ref=f7e487]: Agent evaluation
+            - generic [ref=f7e488]: Hands-on
+        - article [ref=f7e489]:
+          - heading "Context Engineering" [level=4] [ref=f7e490]
+          - paragraph [ref=f7e491]: Memory, context windows, and state persistence.
+          - generic [ref=f7e492]:
+            - generic [ref=f7e493]: Context selection & assembly
+            - generic [ref=f7e494]: Hands-on
+          - generic [ref=f7e495]:
+            - generic [ref=f7e496]: Context window management
+            - generic [ref=f7e497]: Hands-on
+          - generic [ref=f7e498]:
+            - generic [ref=f7e499]: Context compression
+            - generic [ref=f7e500]: Hands-on
+          - generic [ref=f7e501]:
+            - generic [ref=f7e502]: Conversation history
+            - generic [ref=f7e503]: Hands-on
+          - generic [ref=f7e504]:
+            - generic [ref=f7e505]: Persistent memory
+            - generic [ref=f7e506]: Hands-on
+          - generic [ref=f7e507]:
+            - generic [ref=f7e508]: Short & long-term memory
+            - generic [ref=f7e509]: Hands-on
+          - generic [ref=f7e510]:
+            - generic [ref=f7e511]: Session management
+            - generic [ref=f7e512]: Hands-on
+          - generic [ref=f7e513]:
+            - generic [ref=f7e514]: Retrieval-based context
+            - generic [ref=f7e515]: Hands-on
+          - generic [ref=f7e516]:
+            - generic [ref=f7e517]: Summarization
+            - generic [ref=f7e518]: Hands-on
+          - generic [ref=f7e519]:
+            - generic [ref=f7e520]: Context isolation
+            - generic [ref=f7e521]: Familiar
+        - article [ref=f7e522]:
+          - heading "RAG & Vector Databases" [level=4] [ref=f7e523]
+          - paragraph [ref=f7e524]: Retrieval pipelines that ground answers in real data.
+          - generic [ref=f7e525]:
+            - generic [ref=f7e526]: Retrieval-Augmented Generation
+            - generic [ref=f7e527]: Hands-on
+          - generic [ref=f7e528]:
+            - generic [ref=f7e529]: Document ingestion & parsing
+            - generic [ref=f7e530]: Hands-on
+          - generic [ref=f7e531]:
+            - generic [ref=f7e532]: Text chunking
+            - generic [ref=f7e533]: Hands-on
+          - generic [ref=f7e534]:
+            - generic [ref=f7e535]: Embedding generation
+            - generic [ref=f7e536]: Hands-on
+          - generic [ref=f7e537]:
+            - generic [ref=f7e538]: Semantic search
+            - generic [ref=f7e539]: Hands-on
+          - generic [ref=f7e540]:
+            - generic [ref=f7e541]: Hybrid search
+            - generic [ref=f7e542]: Familiar
+          - generic [ref=f7e543]:
+            - generic [ref=f7e544]: Metadata filtering
+            - generic [ref=f7e545]: Hands-on
+          - generic [ref=f7e546]:
+            - generic [ref=f7e547]: Reranking
+            - generic [ref=f7e548]: Familiar
+          - generic [ref=f7e549]:
+            - generic [ref=f7e550]: Vector indexing (Qdrant)
+            - generic [ref=f7e551]: Hands-on
+          - generic [ref=f7e552]:
+            - generic [ref=f7e553]: Retrieval evaluation
+            - generic [ref=f7e554]: Familiar
+          - generic [ref=f7e555]:
+            - generic [ref=f7e556]: Citation-based responses
+            - generic [ref=f7e557]: Hands-on
+          - generic [ref=f7e558]:
+            - generic [ref=f7e559]: Knowledge base development
+            - generic [ref=f7e560]: Hands-on
+        - article [ref=f7e561]:
+          - heading "AI & Machine Learning" [level=4] [ref=f7e562]
+          - paragraph [ref=f7e563]: Models, pipelines, and evaluation.
+          - generic [ref=f7e564]:
+            - generic [ref=f7e565]: Python
+            - generic [ref=f7e566]: Hands-on
+          - generic [ref=f7e567]:
+            - generic [ref=f7e568]: Large Language Models
+            - generic [ref=f7e569]: Hands-on
+          - generic [ref=f7e570]:
+            - generic [ref=f7e571]: Model APIs & inference
+            - generic [ref=f7e572]: Hands-on
+          - generic [ref=f7e573]:
+            - generic [ref=f7e574]: Prompt engineering
+            - generic [ref=f7e575]: Hands-on
+          - generic [ref=f7e576]:
+            - generic [ref=f7e577]: Structured generation
+            - generic [ref=f7e578]: Hands-on
+          - generic [ref=f7e579]:
+            - generic [ref=f7e580]: Hugging Face Transformers
+            - generic [ref=f7e581]: Familiar
+          - generic [ref=f7e582]:
+            - generic [ref=f7e583]: PyTorch
+            - generic [ref=f7e584]: Learning
+          - generic [ref=f7e585]:
+            - generic [ref=f7e586]: AI evaluation
+            - generic [ref=f7e587]: Familiar
+        - article [ref=f7e588]:
+          - heading "Python & Backend Engineering" [level=4] [ref=f7e589]
+          - paragraph [ref=f7e590]: APIs and services that hold systems together.
+          - generic [ref=f7e591]:
+            - generic [ref=f7e592]: FastAPI
+            - generic [ref=f7e593]: Hands-on
+          - generic [ref=f7e594]:
+            - generic [ref=f7e595]: Pydantic
+            - generic [ref=f7e596]: Hands-on
+          - generic [ref=f7e597]:
+            - generic [ref=f7e598]: REST API design
+            - generic [ref=f7e599]: Hands-on
+          - generic [ref=f7e600]:
+            - generic [ref=f7e601]: Webhooks
+            - generic [ref=f7e602]: Hands-on
+          - generic [ref=f7e603]:
+            - generic [ref=f7e604]: Node.js
+            - generic [ref=f7e605]: Hands-on
+          - generic [ref=f7e606]:
+            - generic [ref=f7e607]: Authentication & authorization
+            - generic [ref=f7e608]: Hands-on
+          - generic [ref=f7e609]:
+            - generic [ref=f7e610]: Background jobs
+            - generic [ref=f7e611]: Familiar
+          - generic [ref=f7e612]:
+            - generic [ref=f7e613]: API security
+            - generic [ref=f7e614]: Hands-on
+        - article [ref=f7e615]:
+          - heading "MCP & Tool Integration" [level=4] [ref=f7e616]
+          - paragraph [ref=f7e617]: Model Context Protocol servers and external tools.
+          - generic [ref=f7e618]:
+            - generic [ref=f7e619]: Model Context Protocol
+            - generic [ref=f7e620]: Hands-on
+          - generic [ref=f7e621]:
+            - generic [ref=f7e622]: MCP server development
+            - generic [ref=f7e623]: Hands-on
+          - generic [ref=f7e624]:
+            - generic [ref=f7e625]: MCP clients
+            - generic [ref=f7e626]: Hands-on
+          - generic [ref=f7e627]:
+            - generic [ref=f7e628]: Custom tool development
+            - generic [ref=f7e629]: Hands-on
+          - generic [ref=f7e630]:
+            - generic [ref=f7e631]: Third-party API integration
+            - generic [ref=f7e632]: Hands-on
+          - generic [ref=f7e633]:
+            - generic [ref=f7e634]: Browser automation
+            - generic [ref=f7e635]: Hands-on
+          - generic [ref=f7e636]:
+            - generic [ref=f7e637]: Secure tool access
+            - generic [ref=f7e638]: Hands-on
+        - article [ref=f7e639]:
+          - heading "Multi-Agent Architecture" [level=4] [ref=f7e640]
+          - paragraph [ref=f7e641]: Role-based agents that work together.
+          - generic [ref=f7e642]:
+            - generic [ref=f7e643]: Supervisor architectures
+            - generic [ref=f7e644]: Hands-on
+          - generic [ref=f7e645]:
+            - generic [ref=f7e646]: Role-based agents
+            - generic [ref=f7e647]: Hands-on
+          - generic [ref=f7e648]:
+            - generic [ref=f7e649]: Shared memory
+            - generic [ref=f7e650]: Hands-on
+          - generic [ref=f7e651]:
+            - generic [ref=f7e652]: Sequential workflows
+            - generic [ref=f7e653]: Hands-on
+          - generic [ref=f7e654]:
+            - generic [ref=f7e655]: Parallel workflows
+            - generic [ref=f7e656]: Hands-on
+          - generic [ref=f7e657]:
+            - generic [ref=f7e658]: Task routing
+            - generic [ref=f7e659]: Hands-on
+          - generic [ref=f7e660]:
+            - generic [ref=f7e661]: Agent communication
+            - generic [ref=f7e662]: Hands-on
+          - generic [ref=f7e663]:
+            - generic [ref=f7e664]: Multi-agent error handling
+            - generic [ref=f7e665]: Hands-on
+        - article [ref=f7e666]:
+          - heading "Frontend Engineering" [level=4] [ref=f7e667]
+          - paragraph [ref=f7e668]: Interfaces that make systems usable.
+          - generic [ref=f7e669]:
+            - generic [ref=f7e670]: React
+            - generic [ref=f7e671]: Hands-on
+          - generic [ref=f7e672]:
+            - generic [ref=f7e673]: Next.js
+            - generic [ref=f7e674]: Hands-on
+          - generic [ref=f7e675]:
+            - generic [ref=f7e676]: TypeScript
+            - generic [ref=f7e677]: Hands-on
+          - generic [ref=f7e678]:
+            - generic [ref=f7e679]: JavaScript (ES2024)
+            - generic [ref=f7e680]: Hands-on
+          - generic [ref=f7e681]:
+            - generic [ref=f7e682]: Tailwind CSS
+            - generic [ref=f7e683]: Hands-on
+          - generic [ref=f7e684]:
+            - generic [ref=f7e685]: HTML5 / CSS3
+            - generic [ref=f7e686]: Hands-on
+          - generic [ref=f7e687]:
+            - generic [ref=f7e688]: Component architecture
+            - generic [ref=f7e689]: Hands-on
+          - generic [ref=f7e690]:
+            - generic [ref=f7e691]: State management
+            - generic [ref=f7e692]: Hands-on
+          - generic [ref=f7e693]:
+            - generic [ref=f7e694]: Performance optimization
+            - generic [ref=f7e695]: Familiar
+        - article [ref=f7e696]:
+          - heading "Mobile Application Engineering" [level=4] [ref=f7e697]
+          - paragraph [ref=f7e698]: Cross-platform apps for Android and iOS.
+          - generic [ref=f7e699]:
+            - generic [ref=f7e700]: Flutter
+            - generic [ref=f7e701]: Hands-on
+          - generic [ref=f7e702]:
+            - generic [ref=f7e703]: Dart
+            - generic [ref=f7e704]: Hands-on
+          - generic [ref=f7e705]:
+            - generic [ref=f7e706]: Riverpod
+            - generic [ref=f7e707]: Hands-on
+          - generic [ref=f7e708]:
+            - generic [ref=f7e709]: Bloc / Cubit
+            - generic [ref=f7e710]: Familiar
+          - generic [ref=f7e711]:
+            - generic [ref=f7e712]: Provider / GetX
+            - generic [ref=f7e713]: Familiar
+          - generic [ref=f7e714]:
+            - generic [ref=f7e715]: Firebase Auth & Firestore
+            - generic [ref=f7e716]: Hands-on
+          - generic [ref=f7e717]:
+            - generic [ref=f7e718]: Push notifications (FCM)
+            - generic [ref=f7e719]: Hands-on
+          - generic [ref=f7e720]:
+            - generic [ref=f7e721]: REST API integration
+            - generic [ref=f7e722]: Hands-on
+          - generic [ref=f7e723]:
+            - generic [ref=f7e724]: SQLite / Hive / Isar
+            - generic [ref=f7e725]: Hands-on
+          - generic [ref=f7e726]:
+            - generic [ref=f7e727]: Clean Architecture / MVVM
+            - generic [ref=f7e728]: Hands-on
+          - generic [ref=f7e729]:
+            - generic [ref=f7e730]: Play Store / App Store builds
+            - generic [ref=f7e731]: Hands-on
+          - generic [ref=f7e732]:
+            - generic [ref=f7e733]: Widget & integration testing
+            - generic [ref=f7e734]: Familiar
+        - article [ref=f7e735]:
+          - heading "Database Engineering" [level=4] [ref=f7e736]
+          - paragraph [ref=f7e737]: Relational, document, and vector stores.
+          - generic [ref=f7e738]:
+            - generic [ref=f7e739]: PostgreSQL
+            - generic [ref=f7e740]: Hands-on
+          - generic [ref=f7e741]:
+            - generic [ref=f7e742]: Neon (serverless Postgres)
+            - generic [ref=f7e743]: Hands-on
+          - generic [ref=f7e744]:
+            - generic [ref=f7e745]: SQLite
+            - generic [ref=f7e746]: Hands-on
+          - generic [ref=f7e747]:
+            - generic [ref=f7e748]: Prisma
+            - generic [ref=f7e749]: Hands-on
+          - generic [ref=f7e750]:
+            - generic [ref=f7e751]: MongoDB
+            - generic [ref=f7e752]: Familiar
+          - generic [ref=f7e753]:
+            - generic [ref=f7e754]: Qdrant (vector DB)
+            - generic [ref=f7e755]: Hands-on
+          - generic [ref=f7e756]:
+            - generic [ref=f7e757]: Redis
+            - generic [ref=f7e758]: Familiar
+          - generic [ref=f7e759]:
+            - generic [ref=f7e760]: Object storage
+            - generic [ref=f7e761]: Hands-on
+          - generic [ref=f7e762]:
+            - generic [ref=f7e763]: Indexing & optimization
+            - generic [ref=f7e764]: Familiar
+        - article [ref=f7e765]:
+          - heading "Automation Engineering" [level=4] [ref=f7e766]
+          - paragraph [ref=f7e767]: Business workflows that run themselves.
+          - generic [ref=f7e768]:
+            - generic [ref=f7e769]: OpenClaw
+            - generic [ref=f7e770]: Hands-on
+          - generic [ref=f7e771]:
+            - generic [ref=f7e772]: n8n
+            - generic [ref=f7e773]: Hands-on
+          - generic [ref=f7e774]:
+            - generic [ref=f7e775]: Zapier
+            - generic [ref=f7e776]: Familiar
+          - generic [ref=f7e777]:
+            - generic [ref=f7e778]: CRM integrations
+            - generic [ref=f7e779]: Hands-on
+          - generic [ref=f7e780]:
+            - generic [ref=f7e781]: Lead generation systems
+            - generic [ref=f7e782]: Hands-on
+          - generic [ref=f7e783]:
+            - generic [ref=f7e784]: Customer support automation
+            - generic [ref=f7e785]: Hands-on
+          - generic [ref=f7e786]:
+            - generic [ref=f7e787]: Email & reporting automation
+            - generic [ref=f7e788]: Hands-on
+          - generic [ref=f7e789]:
+            - generic [ref=f7e790]: Human approval workflows
+            - generic [ref=f7e791]: Hands-on
+        - article [ref=f7e792]:
+          - heading "Cloud & Deployment" [level=4] [ref=f7e793]
+          - paragraph [ref=f7e794]: Shipping to production, reliably.
+          - generic [ref=f7e795]:
+            - generic [ref=f7e796]: Vercel
+            - generic [ref=f7e797]: Hands-on
+          - generic [ref=f7e798]:
+            - generic [ref=f7e799]: Firebase (full stack)
+            - generic [ref=f7e800]: Hands-on
+          - generic [ref=f7e801]:
+            - generic [ref=f7e802]: Git & GitHub Actions
+            - generic [ref=f7e803]: Hands-on
+          - generic [ref=f7e804]:
+            - generic [ref=f7e805]: Docker
+            - generic [ref=f7e806]: Familiar
+          - generic [ref=f7e807]:
+            - generic [ref=f7e808]: Uvicorn / serverless runs
+            - generic [ref=f7e809]: Hands-on
+          - generic [ref=f7e810]:
+            - generic [ref=f7e811]: Azure AI services
+            - generic [ref=f7e812]: Familiar
+          - generic [ref=f7e813]:
+            - generic [ref=f7e814]: Neon / managed Postgres
+            - generic [ref=f7e815]: Hands-on
+        - article [ref=f7e816]:
+          - heading "Testing & Security" [level=4] [ref=f7e817]
+          - paragraph [ref=f7e818]: Evaluation, guardrails, and safe deployment.
+          - generic [ref=f7e819]:
+            - generic [ref=f7e820]: Automated testing (pytest)
+            - generic [ref=f7e821]: Hands-on
+          - generic [ref=f7e822]:
+            - generic [ref=f7e823]: Integration testing
+            - generic [ref=f7e824]: Hands-on
+          - generic [ref=f7e825]:
+            - generic [ref=f7e826]: Agent & RAG evaluation
+            - generic [ref=f7e827]: Hands-on
+          - generic [ref=f7e828]:
+            - generic [ref=f7e829]: Guardrails & validation
+            - generic [ref=f7e830]: Hands-on
+          - generic [ref=f7e831]:
+            - generic [ref=f7e832]: Input/output validation
+            - generic [ref=f7e833]: Hands-on
+          - generic [ref=f7e834]:
+            - generic [ref=f7e835]: Secure production deployment
+            - generic [ref=f7e836]: Hands-on
+          - generic [ref=f7e837]:
+            - generic [ref=f7e838]: Logging & monitoring
+            - generic [ref=f7e839]: Hands-on
+          - generic [ref=f7e840]:
+            - generic [ref=f7e841]: Observability
+            - generic [ref=f7e842]: Familiar
+    - generic [ref=f7e844]:
+      - generic [ref=f7e845]:
+        - generic [ref=f7e846]:
+          - paragraph [ref=f7e847]: Projects
+          - heading "Selected engineering work." [level=2] [ref=f7e848]
+          - paragraph [ref=f7e849]: Agent systems, MCP tooling, RAG products and automation — each with a technical case study.
+        - link "More on GitHub" [ref=f7e850] [cursor=pointer]:
+          - /url: https://github.com/abdulsammad-lgtm
+      - generic [ref=f7e854]:
+        - article [ref=f7e855]:
+          - generic [ref=f7e856]:
+            - img "Multi-Agent Fraud Detection System — architecture overview" [ref=f7e857]
+            - generic [ref=f7e858]: Internal / client build
+          - generic [ref=f7e859]:
+            - generic [ref=f7e860]: Multi-Agent AI · Backend Security
+            - heading "Multi-Agent Fraud Detection System" [level=3] [ref=f7e861]
+            - paragraph [ref=f7e862]: A multi-agent detection platform where 10 specialized AI agents analyze every transaction in parallel, orchestrated by a weighted scoring engine.
+            - generic [ref=f7e863]:
+              - generic [ref=f7e864]: FastAPI
+              - generic [ref=f7e865]: OpenAI Agents SDK
+              - generic [ref=f7e866]: Python 3.12+
+              - generic [ref=f7e867]: NetworkX
+              - generic [ref=f7e868]: PostgreSQL
+              - generic [ref=f7e869]: "+8"
+            - link "Read case study" [ref=f7e871] [cursor=pointer]:
+              - /url: /projects/agentic-fraud-detection
+        - article [ref=f7e875]:
+          - generic [ref=f7e876]:
+            - generic [ref=f7e882]: case study
+            - generic [ref=f7e883]: Live product
+          - generic [ref=f7e884]:
+            - generic [ref=f7e885]: Model Context Protocol · Agent Tooling
+            - heading "MCP Servers — Instagram, WordPress & Remotion" [level=3] [ref=f7e886]
+            - paragraph [ref=f7e887]: A suite of custom MCP servers that plug real-world platforms — Instagram, WordPress and Remotion — directly into AI agents as callable tools.
+            - generic [ref=f7e888]:
+              - generic [ref=f7e889]: Model Context Protocol
+              - generic [ref=f7e890]: MCP SDK
+              - generic [ref=f7e891]: Tool registries
+              - generic [ref=f7e892]: JSON-RPC
+              - generic [ref=f7e893]: Third-party platform APIs
+              - generic [ref=f7e894]: "+1"
+            - link "Read case study" [ref=f7e896] [cursor=pointer]:
+              - /url: /projects/mcp-servers
+        - article [ref=f7e900]:
+          - generic [ref=f7e901]:
+            - generic [ref=f7e907]: case study
+            - generic [ref=f7e908]: Live product
+          - generic [ref=f7e909]:
+            - generic [ref=f7e910]: RAG · AI Application
+            - heading "OpenCode AI Teaching Assistant" [level=3] [ref=f7e911]
+            - paragraph [ref=f7e912]: A bilingual RAG-powered tutoring platform that retrieves grounded answers, evaluates student work against rubrics, and generates structured feedback.
+            - generic [ref=f7e913]:
+              - generic [ref=f7e914]: Next.js
+              - generic [ref=f7e915]: FastAPI
+              - generic [ref=f7e916]: Python
+              - generic [ref=f7e917]: Qdrant
+              - generic [ref=f7e918]: RAG
+              - generic [ref=f7e919]: "+2"
+            - link "Read case study" [ref=f7e921] [cursor=pointer]:
+              - /url: /projects/ai-teaching-assistant
+        - article [ref=f7e925]:
+          - generic [ref=f7e926]:
+            - generic [ref=f7e932]: case study
+            - generic [ref=f7e933]: Internal / client build
+          - generic [ref=f7e934]:
+            - generic [ref=f7e935]: Agentic Automation
+            - heading "OpenClaw Automation System" [level=3] [ref=f7e936]
+            - paragraph [ref=f7e937]: Autonomous agent workflows that handle real operational work — browser tasks, file management, tool execution, reporting and integrations — with persistent context.
+            - generic [ref=f7e938]:
+              - generic [ref=f7e939]: OpenClaw
+              - generic [ref=f7e940]: Browser automation
+              - generic [ref=f7e941]: Python
+              - generic [ref=f7e942]: n8n
+              - generic [ref=f7e943]: CRM APIs
+              - generic [ref=f7e944]: "+1"
+            - link "Read case study" [ref=f7e946] [cursor=pointer]:
+              - /url: /projects/openclaw-automation
+        - article [ref=f7e950]:
+          - generic [ref=f7e951]:
+            - generic [ref=f7e957]: case study
+            - generic [ref=f7e958]: Build
+          - generic [ref=f7e959]:
+            - generic [ref=f7e960]: Full-Stack · Application
+            - heading "HCM Lite" [level=3] [ref=f7e961]
+            - paragraph [ref=f7e962]: A functional application build — modules, authentication, database and integrations. Case study details are being verified against the actual implementation.
+            - generic [ref=f7e963]: case study details under verification
+    - generic [ref=f7e965]:
+      - generic [ref=f7e966]:
+        - paragraph [ref=f7e967]: Experience
+        - heading "Professional experience." [level=2] [ref=f7e968]
+        - paragraph [ref=f7e969]: Four years of overall professional experience, with the last two years dedicated to AI agent engineering and automation.
+      - generic [ref=f7e970]:
+        - article [ref=f7e976]:
+          - generic [ref=f7e977]:
+            - heading "AI Agent & Automation Engineer" [level=3] [ref=f7e978]
+            - generic [ref=f7e979]: 2025 — Present
+          - generic [ref=f7e980]: Independent · Client projects
+          - list [ref=f7e981]:
+            - listitem [ref=f7e982]: ▹ Design and deploy autonomous AI agents for customer support, lead generation, scheduling, and business task automation.
+            - listitem [ref=f7e983]: ▹ Build OpenClaw-based intelligent workflows with custom skill integration and persistent memory handling.
+            - listitem [ref=f7e984]: ▹ Develop multi-agent systems, including a fraud detection platform with parallel agent execution, weighted scoring orchestration and compliance guardrails.
+            - listitem [ref=f7e985]: ▹ Implement RAG knowledge bases with vector stores to ground AI responses in real material.
+            - listitem [ref=f7e986]: ▹ Create Model Context Protocol (MCP) servers connecting agents to Instagram, WordPress and Remotion.
+            - listitem [ref=f7e987]: ▹ Integrate AI systems with APIs, CRMs, calendars, email tools and web services; apply validation guardrails, monitoring and evaluation.
+        - article [ref=f7e994]:
+          - generic [ref=f7e995]:
+            - heading "Full-Stack & Mobile Application Development" [level=3] [ref=f7e996]
+            - generic [ref=f7e997]: 2022 — Present
+          - generic [ref=f7e998]: Overall professional experience
+          - list [ref=f7e999]:
+            - listitem [ref=f7e1000]: ▹ Four years of overall professional software experience across web and application development.
+            - listitem [ref=f7e1001]: ▹ Build complete applications with React, Next.js, TypeScript and Tailwind CSS on the frontend; Python/FastAPI and Node.js on the backend.
+            - listitem [ref=f7e1002]: ▹ Develop cross-platform mobile applications with Flutter and Dart, backed by Firebase and local persistence layers.
+            - listitem [ref=f7e1003]: ▹ Work with PostgreSQL, Neon, SQLite, Prisma and object storage in production deployments.
+    - generic [ref=f7e1005]:
+      - generic [ref=f7e1006]:
+        - paragraph [ref=f7e1007]: Process
+        - heading "How I ship systems." [level=2] [ref=f7e1008]
+        - paragraph [ref=f7e1009]: The same six-step loop behind every project — from first discovery call to a system that keeps improving in production.
+      - generic [ref=f7e1010]:
+        - article [ref=f7e1011]:
+          - text: "01"
+          - heading "Discovery" [level=4] [ref=f7e1012]
+          - paragraph [ref=f7e1013]: Understand the business problem and technical requirements.
+          - generic [ref=f7e1014]:
+            - generic [ref=f7e1015]: Technical discovery calls
+            - generic [ref=f7e1016]: Operational workflow mapping
+            - generic [ref=f7e1017]: Requirement analysis
+        - article [ref=f7e1018]:
+          - text: "02"
+          - heading "Architecture" [level=4] [ref=f7e1019]
+          - paragraph [ref=f7e1020]: Select the right models, frameworks, APIs, agents, databases and infrastructure.
+          - generic [ref=f7e1021]:
+            - generic [ref=f7e1022]: Model & tool selection
+            - generic [ref=f7e1023]: Agent topology design
+            - generic [ref=f7e1024]: Data & vector store planning
+        - article [ref=f7e1025]:
+          - text: "03"
+          - heading "Development" [level=4] [ref=f7e1026]
+          - paragraph [ref=f7e1027]: Build the agents, workflows, backend, frontend and integrations.
+          - generic [ref=f7e1028]:
+            - generic [ref=f7e1029]: Agent & harness implementation
+            - generic [ref=f7e1030]: API / MCP integrations
+            - generic [ref=f7e1031]: Application development
+        - article [ref=f7e1032]:
+          - text: "04"
+          - heading "Testing" [level=4] [ref=f7e1033]
+          - paragraph [ref=f7e1034]: Test functionality, security, edge cases, reliability and performance.
+          - generic [ref=f7e1035]:
+            - generic [ref=f7e1036]: Automated test suites
+            - generic [ref=f7e1037]: Agent & RAG evaluation
+            - generic [ref=f7e1038]: Security & guardrails
+        - article [ref=f7e1039]:
+          - text: "05"
+          - heading "Deployment" [level=4] [ref=f7e1040]
+          - paragraph [ref=f7e1041]: Deploy the complete application and configure production environments.
+          - generic [ref=f7e1042]:
+            - generic [ref=f7e1043]: CI/CD & environment config
+            - generic [ref=f7e1044]: Secrets & access control
+            - generic [ref=f7e1045]: Database migration
+        - article [ref=f7e1046]:
+          - text: "06"
+          - heading "Monitoring & Optimization" [level=4] [ref=f7e1047]
+          - paragraph [ref=f7e1048]: Monitor execution, evaluate results, fix failures and improve performance.
+          - generic [ref=f7e1049]:
+            - generic [ref=f7e1050]: Tracing & observability
+            - generic [ref=f7e1051]: Error monitoring
+            - generic [ref=f7e1052]: Continuous improvement
+    - generic [ref=f7e1054]:
+      - generic [ref=f7e1055]:
+        - paragraph [ref=f7e1056]: Services
+        - heading "What I deliver." [level=2] [ref=f7e1057]
+        - paragraph [ref=f7e1058]: Engineering, integration, automation and deployment — from discovery call to production system.
+      - generic [ref=f7e1059]:
+        - article [ref=f7e1060]:
+          - generic [ref=f7e1064]:
+            - heading "Custom AI Agent Development" [level=4] [ref=f7e1065]
+            - paragraph [ref=f7e1066]: Autonomous agents that plan, call tools, and complete real tasks — designed around your business logic.
+        - article [ref=f7e1067]:
+          - generic [ref=f7e1078]:
+            - heading "Multi-Agent System Development" [level=4] [ref=f7e1079]
+            - paragraph [ref=f7e1080]: Supervisor architectures, role-based agents, delegation and parallel workflows with shared memory.
+        - article [ref=f7e1081]:
+          - generic [ref=f7e1086]:
+            - heading "AI Workflow Automation" [level=4] [ref=f7e1087]
+            - paragraph [ref=f7e1088]: End-to-end automation of business processes with agents, n8n and custom pipelines.
+        - article [ref=f7e1089]:
+          - generic [ref=f7e1095]:
+            - heading "RAG & Knowledge Base Development" [level=4] [ref=f7e1096]
+            - paragraph [ref=f7e1097]: Document ingestion, embedding, vector search and citation-grounded answers your team can trust.
+        - article [ref=f7e1098]:
+          - generic [ref=f7e1110]:
+            - heading "Agent Harness Engineering" [level=4] [ref=f7e1111]
+            - paragraph [ref=f7e1112]: Execution loops, tool runtimes, checkpoints, retries and error recovery for reliable agents.
+        - article [ref=f7e1113]:
+          - generic [ref=f7e1117]:
+            - heading "Context Engineering & Management" [level=4] [ref=f7e1118]
+            - paragraph [ref=f7e1119]: Context window strategy, compression, long-term memory and state persistence.
+        - article [ref=f7e1120]:
+          - generic [ref=f7e1123]:
+            - heading "MCP Server & Tool Integration" [level=4] [ref=f7e1124]
+            - paragraph [ref=f7e1125]: Custom MCP servers so agents can operate Instagram, WordPress, internal APIs and more.
+        - article [ref=f7e1126]:
+          - generic [ref=f7e1132]:
+            - heading "Forward Deployed AI Solutions" [level=4] [ref=f7e1133]
+            - paragraph [ref=f7e1134]: Technical discovery → architecture → prototype → production deployment with your team.
+        - article [ref=f7e1135]:
+          - generic [ref=f7e1140]:
+            - heading "Full-Stack Web Application Development" [level=4] [ref=f7e1141]
+            - paragraph [ref=f7e1142]: React, Next.js, TypeScript frontends with Python/Node.js backends — production-grade.
+        - article [ref=f7e1143]:
+          - generic [ref=f7e1148]:
+            - heading "SaaS Product Development" [level=4] [ref=f7e1149]
+            - paragraph [ref=f7e1150]: "From concept to a deployable product: auth, billing-ready architecture, dashboards, APIs."
+        - article [ref=f7e1151]:
+          - generic [ref=f7e1154]:
+            - heading "Flutter Mobile Application Development" [level=4] [ref=f7e1155]
+            - paragraph [ref=f7e1156]: Cross-platform Android/iOS apps with Firebase, offline-first storage, and clean architecture.
+        - article [ref=f7e1157]:
+          - generic [ref=f7e1161]:
+            - heading "API & Backend Engineering" [level=4] [ref=f7e1162]
+            - paragraph [ref=f7e1163]: FastAPI/Node services, REST APIs, webhooks, authentication and database integration.
+        - article [ref=f7e1164]:
+          - generic [ref=f7e1170]:
+            - heading "Business Process Automation" [level=4] [ref=f7e1171]
+            - paragraph [ref=f7e1172]: CRM updates, lead generation, reporting and email flows that run without manual work.
+        - article [ref=f7e1173]:
+          - generic [ref=f7e1177]:
+            - heading "AI System Integration & Deployment" [level=4] [ref=f7e1178]
+            - paragraph [ref=f7e1179]: Wiring AI into existing stacks, then deploying, monitoring and improving in production.
+    - generic [ref=f7e1181]:
+      - generic [ref=f7e1182]:
+        - paragraph [ref=f7e1183]: Certifications
+        - heading "32 verified certifications, and counting." [level=2] [ref=f7e1184]
+        - paragraph [ref=f7e1185]: Anthropic Claude development & AI Fluency tracks, Microsoft Azure & AI, IBM agentic AI & RAG, Adobe, HP — every certificate shown with its actual image.
+      - generic [ref=f7e1186]:
+        - link "AI Agent Development on Azure — view in certificate gallery" [ref=f7e1187]:
+          - /url: /certifications#ms-ai-agent-development-azure
+          - img "AI Agent Development on Azure certificate from Microsoft" [ref=f7e1189]
+          - generic [ref=f7e1190]:
+            - heading "AI Agent Development on Azure" [level=4] [ref=f7e1191]
+            - paragraph [ref=f7e1192]: Microsoft
+            - generic [ref=f7e1193]: Microsoft
+        - link "Introduction to Generative AI Concepts — view in certificate gallery" [ref=f7e1194]:
+          - /url: /certifications#ms-generative-ai-concepts
+          - img "Introduction to Generative AI Concepts certificate from Microsoft" [ref=f7e1196]
+          - generic [ref=f7e1197]:
+            - heading "Introduction to Generative AI Concepts" [level=4] [ref=f7e1198]
+            - paragraph [ref=f7e1199]: Microsoft
+            - generic [ref=f7e1200]: Microsoft
+        - link "Introduction to AI Concepts — view in certificate gallery" [ref=f7e1201]:
+          - /url: /certifications#ms-ai-concepts
+          - img "Introduction to AI Concepts certificate from Microsoft" [ref=f7e1203]
+          - generic [ref=f7e1204]:
+            - heading "Introduction to AI Concepts" [level=4] [ref=f7e1205]
+            - paragraph [ref=f7e1206]: Microsoft
+            - generic [ref=f7e1207]: Microsoft
+        - link "Describe the Benefits of Cloud Services — view in certificate gallery" [ref=f7e1208]:
+          - /url: /certifications#ms-benefits-of-cloud-services
+          - img "Describe the Benefits of Cloud Services certificate from Microsoft" [ref=f7e1210]
+          - generic [ref=f7e1211]:
+            - heading "Describe the Benefits of Cloud Services" [level=4] [ref=f7e1212]
+            - paragraph [ref=f7e1213]: Microsoft
+            - generic [ref=f7e1214]: Microsoft
+        - link "Prompt Flow on Azure AI Foundry — view in certificate gallery" [ref=f7e1215]:
+          - /url: /certifications#ms-prompt-flow-azure-ai-foundry
+          - img "Prompt Flow on Azure AI Foundry certificate from Microsoft" [ref=f7e1217]
+          - generic [ref=f7e1218]:
+            - heading "Prompt Flow on Azure AI Foundry" [level=4] [ref=f7e1219]
+            - paragraph [ref=f7e1220]: Microsoft
+            - generic [ref=f7e1221]: Microsoft
+        - link "Power Apps Canvas Imperative Techniques — view in certificate gallery" [ref=f7e1222]:
+          - /url: /certifications#ms-power-apps-canvas
+          - img "Power Apps Canvas Imperative Techniques certificate from Microsoft" [ref=f7e1224]
+          - generic [ref=f7e1225]:
+            - heading "Power Apps Canvas Imperative Techniques" [level=4] [ref=f7e1226]
+            - paragraph [ref=f7e1227]: Microsoft
+            - generic [ref=f7e1228]: Microsoft
+        - link "Implement GitHub Actions — view in certificate gallery" [ref=f7e1229]:
+          - /url: /certifications#ms-github-actions
+          - img "Implement GitHub Actions certificate from Microsoft" [ref=f7e1231]
+          - generic [ref=f7e1232]:
+            - heading "Implement GitHub Actions" [level=4] [ref=f7e1233]
+            - paragraph [ref=f7e1234]: Microsoft
+            - generic [ref=f7e1235]: Microsoft
+        - link "Implement GitHub Actions for Azure — view in certificate gallery" [ref=f7e1236]:
+          - /url: /certifications#ms-github-actions-azure
+          - img "Implement GitHub Actions for Azure certificate from Microsoft" [ref=f7e1238]
+          - generic [ref=f7e1239]:
+            - heading "Implement GitHub Actions for Azure" [level=4] [ref=f7e1240]
+            - paragraph [ref=f7e1241]: Microsoft
+            - generic [ref=f7e1242]: Microsoft
+        - link "Claude 101 — view in certificate gallery" [ref=f7e1243]:
+          - /url: /certifications#anthropic-claude-101
+          - img "Claude 101 certificate from Anthropic" [ref=f7e1245]
+          - generic [ref=f7e1246]:
+            - heading "Claude 101" [level=4] [ref=f7e1247]
+            - paragraph [ref=f7e1248]: Anthropic
+            - generic [ref=f7e1249]: Anthropic — Claude Development
+        - link "Claude Code in Action — view in certificate gallery" [ref=f7e1250]:
+          - /url: /certifications#anthropic-claude-code-action
+          - img "Claude Code in Action certificate from Anthropic" [ref=f7e1252]
+          - generic [ref=f7e1253]:
+            - heading "Claude Code in Action" [level=4] [ref=f7e1254]
+            - paragraph [ref=f7e1255]: Anthropic
+            - generic [ref=f7e1256]: Anthropic — Claude Development
+      - link "View full certificate gallery" [ref=f7e1258] [cursor=pointer]:
+        - /url: /certifications
+    - generic [ref=f7e1264]:
+      - generic [ref=f7e1265]:
+        - paragraph [ref=f7e1266]: Contact
+        - heading [level=2] [ref=f7e1267]:
+          - text: Let's build something
+          - emphasis [ref=f7e1268]: autonomous.
+        - paragraph [ref=f7e1269]: Available for AI engineering roles, forward deployed engagements, freelance builds and agency collaborations. Tell me what you need.
+        - generic [ref=f7e1270]:
+          - link "Email abdulsammad14a1947@gmail.com" [ref=f7e1271] [cursor=pointer]:
+            - /url: mailto:abdulsammad14a1947@gmail.com
+            - generic [ref=f7e1276]:
+              - generic [ref=f7e1277]: Email
+              - text: abdulsammad14a1947@gmail.com
+          - link "LinkedIn linkedin.com/in/abdul-samad" [ref=f7e1278] [cursor=pointer]:
+            - /url: https://linkedin.com/in/abdul-samad-b66b7b373
+            - generic [ref=f7e1284]:
+              - generic [ref=f7e1285]: LinkedIn
+              - text: linkedin.com/in/abdul-samad
+          - link "GitHub github.com/abdulsammad-lgtm" [ref=f7e1286] [cursor=pointer]:
+            - /url: https://github.com/abdulsammad-lgtm
+            - generic [ref=f7e1291]:
+              - generic [ref=f7e1292]: GitHub
+              - text: github.com/abdulsammad-lgtm
+          - link "Instagram @Agentic_sam" [ref=f7e1293] [cursor=pointer]:
+            - /url: https://instagram.com/@Agentic_sam
+            - generic [ref=f7e1298]:
+              - generic [ref=f7e1299]: Instagram
+              - text: "@Agentic_sam"
+          - link "Phone · Karachi, Pakistan 0317 2924510" [ref=f7e1300] [cursor=pointer]:
+            - /url: tel:+923172924510
+            - generic [ref=f7e1304]:
+              - generic [ref=f7e1305]: Phone · Karachi, Pakistan
+              - text: 0317 2924510
+      - generic [ref=f7e1306]:
+        - generic [ref=f7e1307]:
+          - generic [ref=f7e1308]:
+            - generic [ref=f7e1309]: Full name
+            - textbox "Full name" [ref=f7e1310]:
+              - /placeholder: Your name
+          - generic [ref=f7e1311]:
+            - generic [ref=f7e1312]: Email
+            - textbox "Email" [ref=f7e1313]:
+              - /placeholder: you@company.com
+        - generic [ref=f7e1314]:
+          - generic [ref=f7e1315]: Opportunity type
+          - combobox "Opportunity type" [ref=f7e1316] [cursor=pointer]:
+            - option "AI Engineering Job"
+            - option "Forward Deployed Engineering"
+            - option "Full-Stack Development"
+            - option "Mobile Application Development"
+            - option "Freelance Project" [selected]
+            - option "AI Automation"
+            - option "Agency Collaboration"
+            - option "Other"
+        - generic [ref=f7e1317]:
+          - generic [ref=f7e1318]: Message
+          - textbox "Message" [ref=f7e1319]:
+            - /placeholder: Tell me about the problem you want to solve…
+        - button "Send message" [ref=f7e1320] [cursor=pointer]
+        - paragraph [ref=f7e1324]: Prefer email directly? Click any contact on the left — no forms required.
+  - contentinfo [ref=f7e1329]:
+    - generic [ref=f7e1330]:
+      - generic [ref=f7e1331]:
+        - generic [ref=f7e1332]:
+          - link [ref=f7e1333] [cursor=pointer]:
+            - /url: /
+            - text: Abdul
+            - emphasis [ref=f7e1335]: Samad
+          - paragraph [ref=f7e1336]: Agentic AI Engineer & Forward Deployed Engineer in Karachi, Pakistan. Building intelligent systems for the real world.
+        - navigation "Site" [ref=f7e1337]:
+          - heading "Site" [level=5] [ref=f7e1338]
+          - link "About" [ref=f7e1339] [cursor=pointer]:
+            - /url: /#about
+          - link "Engineering" [ref=f7e1340] [cursor=pointer]:
+            - /url: /#engineering
+          - link "Skills" [ref=f7e1341] [cursor=pointer]:
+            - /url: /#skills
+          - link "Projects" [ref=f7e1342] [cursor=pointer]:
+            - /url: /#projects
+          - link "Certifications" [ref=f7e1343] [cursor=pointer]:
+            - /url: /certifications
+          - link "Contact" [ref=f7e1344] [cursor=pointer]:
+            - /url: /#contact
+        - navigation "Case studies" [ref=f7e1345]:
+          - heading "Case studies" [level=5] [ref=f7e1346]
+          - link "Multi-Agent Fraud Detection" [ref=f7e1347] [cursor=pointer]:
+            - /url: /projects/agentic-fraud-detection
+          - link "MCP Servers" [ref=f7e1348] [cursor=pointer]:
+            - /url: /projects/mcp-servers
+          - link "AI Teaching Assistant" [ref=f7e1349] [cursor=pointer]:
+            - /url: /projects/ai-teaching-assistant
+          - link "OpenClaw Automation" [ref=f7e1350] [cursor=pointer]:
+            - /url: /projects/openclaw-automation
+        - generic [ref=f7e1351]:
+          - heading "Reach" [level=5] [ref=f7e1352]
+          - link "abdulsammad14a1947@gmail.com" [ref=f7e1353] [cursor=pointer]:
+            - /url: mailto:abdulsammad14a1947@gmail.com
+          - link "LinkedIn" [ref=f7e1354] [cursor=pointer]:
+            - /url: https://linkedin.com/in/abdul-samad-b66b7b373
+          - link "GitHub" [ref=f7e1355] [cursor=pointer]:
+            - /url: https://github.com/abdulsammad-lgtm
+      - generic [ref=f7e1356]:
+        - generic [ref=f7e1357]: © 2026 Abdul Samad · Karachi, Pakistan
+        - generic [ref=f7e1358]:
+          - link "LinkedIn" [ref=f7e1359] [cursor=pointer]:
+            - /url: https://linkedin.com/in/abdul-samad-b66b7b373
+          - link "GitHub" [ref=f7e1364] [cursor=pointer]:
+            - /url: https://github.com/abdulsammad-lgtm
+          - link "Instagram" [ref=f7e1368] [cursor=pointer]:
+            - /url: https://instagram.com/@Agentic_sam
+          - link "Email" [ref=f7e1372] [cursor=pointer]:
+            - /url: mailto:abdulsammad14a1947@gmail.com

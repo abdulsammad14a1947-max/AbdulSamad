@@ -1,48 +1,72 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const LINKS = [
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#services", label: "Services" },
-  { href: "#experience", label: "Experience" },
-  { href: "#projects", label: "Projects" },
-  { href: "#certifications", label: "Certifications" },
+  { href: "/", label: "Home" },
+  { href: "/#about", label: "About" },
+  { href: "/#engineering", label: "Engineering" },
+  { href: "/#skills", label: "Skills" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/certifications", label: "Certifications" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState("");
+  const pathname = usePathname();
 
   useEffect(() => {
-    const sections = LINKS.map((l) => document.querySelector(l.href)).filter(
-      Boolean
-    ) as HTMLElement[];
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // close the mobile menu on route change
+  useEffect(() => setOpen(false), [pathname]);
+
+  // section spy only on the home page
+  useEffect(() => {
+    if (pathname !== "/") return;
+    const targets = ["about", "engineering", "skills", "projects", "experience", "contact"]
+      .map((id) => document.getElementById(id))
+      .filter(Boolean) as HTMLElement[];
     const obs = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) setActive("#" + entry.target.id);
+        entries.forEach((e) => {
+          if (e.isIntersecting) setActive("#" + e.target.id);
         });
       },
-      { rootMargin: "-45% 0px -50% 0px" }
+      { rootMargin: "-40% 0px -55% 0px" }
     );
-    sections.forEach((s) => obs.observe(s));
+    targets.forEach((t) => obs.observe(t));
     return () => obs.disconnect();
-  }, []);
+  }, [pathname]);
 
   return (
     <div className="nav-wrap">
-      <nav className="nav" aria-label="Primary">
-        <a href="#home" className="nav-logo">
-          Abdul <em>Samad</em>
+      <nav className={`nav${scrolled ? " scrolled" : ""}`} aria-label="Primary">
+        <a href="/" className="nav-logo">
+          <span className="nav-dot" aria-hidden="true" />
+          Abdul&nbsp;<em>Samad</em>
         </a>
+
         <ul className={`nav-links${open ? " open" : ""}`}>
           {LINKS.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
-                className={active === l.href ? "active" : ""}
+                className={
+                  (l.href.startsWith("/#") && pathname === "/" && active === l.href.slice(1)
+                    ? "active"
+                    : "") +
+                  (l.href === "/certifications" && pathname === "/certifications" ? " active" : "")
+                }
                 onClick={() => setOpen(false)}
               >
                 {l.label}
@@ -50,22 +74,19 @@ export default function Nav() {
             </li>
           ))}
           <li className="nav-mobile-contact">
-            <a href="#contact" onClick={() => setOpen(false)}>
+            <a href="/#contact" onClick={() => setOpen(false)}>
               Get in touch
             </a>
           </li>
         </ul>
-        <button
-          className="nav-cta"
-          onClick={() =>
-            document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
-          }
-        >
+
+        <a className="nav-cta" href="/#contact">
           Get in touch
-        </button>
+        </a>
+
         <button
           className={`nav-toggle${open ? " active" : ""}`}
-          aria-label="Menu"
+          aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((o) => !o)}
         >

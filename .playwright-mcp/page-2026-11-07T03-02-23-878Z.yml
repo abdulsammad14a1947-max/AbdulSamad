@@ -1,0 +1,335 @@
+- generic [active] [ref=f5e1]:
+  - link "Skip to content" [ref=f5e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - navigation "Primary" [ref=f5e4]:
+    - link [ref=f5e5] [cursor=pointer]:
+      - /url: /
+      - text: Abdul
+      - emphasis [ref=f5e7]: Samad
+    - list [ref=f5e8]:
+      - listitem [ref=f5e9]:
+        - link "Home" [ref=f5e10] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=f5e11]:
+        - link "About" [ref=f5e12] [cursor=pointer]:
+          - /url: /#about
+      - listitem [ref=f5e13]:
+        - link "Engineering" [ref=f5e14] [cursor=pointer]:
+          - /url: /#engineering
+      - listitem [ref=f5e15]:
+        - link "Skills" [ref=f5e16] [cursor=pointer]:
+          - /url: /#skills
+      - listitem [ref=f5e17]:
+        - link "Projects" [ref=f5e18] [cursor=pointer]:
+          - /url: /#projects
+      - listitem [ref=f5e19]:
+        - link "Experience" [ref=f5e20] [cursor=pointer]:
+          - /url: /#experience
+      - listitem [ref=f5e21]:
+        - link "Certifications" [ref=f5e22] [cursor=pointer]:
+          - /url: /certifications
+      - listitem [ref=f5e23]:
+        - link "Contact" [ref=f5e24] [cursor=pointer]:
+          - /url: /#contact
+    - link "Get in touch" [ref=f5e25] [cursor=pointer]:
+      - /url: /#contact
+  - main [ref=f5e26]:
+    - generic [ref=f5e28]:
+      - navigation "Breadcrumb" [ref=f5e29]:
+        - link "Home" [ref=f5e30] [cursor=pointer]:
+          - /url: /
+        - generic [aria-hidden] [ref=f5e31]: /
+        - generic [ref=f5e32]: Certifications
+      - paragraph [ref=f5e33]: Certification gallery
+      - heading "32 verified certificates." [level=1] [ref=f5e34]
+      - paragraph [ref=f5e35]: Every card shows the real certificate image — click any card to open the full-size, zoomable view. Anthropic, Microsoft, IBM, Adobe, HP and more; organized by category, searchable, and open to expansion.
+    - generic [ref=f5e36]:
+      - generic [ref=f5e37]:
+        - searchbox "Search certificates" [ref=f5e42]
+        - combobox "Filter certificates by category" [ref=f5e43] [cursor=pointer]:
+          - option "All" [selected]
+          - option "Microsoft"
+          - option "Anthropic — Claude Development"
+          - option "Anthropic — AI Fluency"
+          - option "IBM"
+          - option "Adobe"
+          - option "HP LIFE"
+          - option "AI Engineering"
+          - option "Other Verified"
+          - option "UI/UX & Brand Identity"
+        - generic [ref=f5e44]: 32 certificates · 9 categories
+      - generic [ref=f5e45]:
+        - button "View AI Agent Development on Azure certificate full size" [ref=f5e46]:
+          - img "AI Agent Development on Azure certificate from Microsoft" [ref=f5e48]
+          - generic [ref=f5e49]:
+            - heading "AI Agent Development on Azure" [level=4] [ref=f5e50]
+            - paragraph [ref=f5e51]: Microsoft
+            - generic [ref=f5e52]: Microsoft
+        - button "View Introduction to Generative AI Concepts certificate full size" [ref=f5e53]:
+          - img "Introduction to Generative AI Concepts certificate from Microsoft" [ref=f5e55]
+          - generic [ref=f5e56]:
+            - heading "Introduction to Generative AI Concepts" [level=4] [ref=f5e57]
+            - paragraph [ref=f5e58]: Microsoft
+            - generic [ref=f5e59]: Microsoft
+        - button "View Introduction to AI Concepts certificate full size" [ref=f5e60]:
+          - img "Introduction to AI Concepts certificate from Microsoft" [ref=f5e62]
+          - generic [ref=f5e63]:
+            - heading "Introduction to AI Concepts" [level=4] [ref=f5e64]
+            - paragraph [ref=f5e65]: Microsoft
+            - generic [ref=f5e66]: Microsoft
+        - button "View Describe the Benefits of Cloud Services certificate full size" [ref=f5e67]:
+          - img "Describe the Benefits of Cloud Services certificate from Microsoft" [ref=f5e69]
+          - generic [ref=f5e70]:
+            - heading "Describe the Benefits of Cloud Services" [level=4] [ref=f5e71]
+            - paragraph [ref=f5e72]: Microsoft
+            - generic [ref=f5e73]: Microsoft
+        - button "View Prompt Flow on Azure AI Foundry certificate full size" [ref=f5e74]:
+          - img "Prompt Flow on Azure AI Foundry certificate from Microsoft" [ref=f5e76]
+          - generic [ref=f5e77]:
+            - heading "Prompt Flow on Azure AI Foundry" [level=4] [ref=f5e78]
+            - paragraph [ref=f5e79]: Microsoft
+            - generic [ref=f5e80]: Microsoft
+        - button "View Power Apps Canvas Imperative Techniques certificate full size" [ref=f5e81]:
+          - img "Power Apps Canvas Imperative Techniques certificate from Microsoft" [ref=f5e83]
+          - generic [ref=f5e84]:
+            - heading "Power Apps Canvas Imperative Techniques" [level=4] [ref=f5e85]
+            - paragraph [ref=f5e86]: Microsoft
+            - generic [ref=f5e87]: Microsoft
+        - button "View Implement GitHub Actions certificate full size" [ref=f5e88]:
+          - img "Implement GitHub Actions certificate from Microsoft" [ref=f5e90]
+          - generic [ref=f5e91]:
+            - heading "Implement GitHub Actions" [level=4] [ref=f5e92]
+            - paragraph [ref=f5e93]: Microsoft
+            - generic [ref=f5e94]: Microsoft
+        - button "View Implement GitHub Actions for Azure certificate full size" [ref=f5e95]:
+          - img "Implement GitHub Actions for Azure certificate from Microsoft" [ref=f5e97]
+          - generic [ref=f5e98]:
+            - heading "Implement GitHub Actions for Azure" [level=4] [ref=f5e99]
+            - paragraph [ref=f5e100]: Microsoft
+            - generic [ref=f5e101]: Microsoft
+        - button "View Claude 101 certificate full size" [ref=f5e102]:
+          - img "Claude 101 certificate from Anthropic" [ref=f5e104]
+          - generic [ref=f5e105]:
+            - heading "Claude 101" [level=4] [ref=f5e106]
+            - paragraph [ref=f5e107]: Anthropic
+            - generic [ref=f5e108]: Anthropic — Claude Development
+        - button "View Claude Code in Action certificate full size" [ref=f5e109]:
+          - img "Claude Code in Action certificate from Anthropic" [ref=f5e111]
+          - generic [ref=f5e112]:
+            - heading "Claude Code in Action" [level=4] [ref=f5e113]
+            - paragraph [ref=f5e114]: Anthropic
+            - generic [ref=f5e115]: Anthropic — Claude Development
+        - button "View Introduction to Claude Cowork certificate full size" [ref=f5e116]:
+          - img "Introduction to Claude Cowork certificate from Anthropic" [ref=f5e118]
+          - generic [ref=f5e119]:
+            - heading "Introduction to Claude Cowork" [level=4] [ref=f5e120]
+            - paragraph [ref=f5e121]: Anthropic
+            - generic [ref=f5e122]: Anthropic — Claude Development
+        - button "View Introduction to Model Context Protocol certificate full size" [ref=f5e123]:
+          - img "Introduction to Model Context Protocol certificate from Anthropic" [ref=f5e125]
+          - generic [ref=f5e126]:
+            - heading "Introduction to Model Context Protocol" [level=4] [ref=f5e127]
+            - paragraph [ref=f5e128]: Anthropic
+            - generic [ref=f5e129]: Anthropic — Claude Development
+        - button "View Introduction to Subagents certificate full size" [ref=f5e130]:
+          - img "Introduction to Subagents certificate from Anthropic" [ref=f5e132]
+          - generic [ref=f5e133]:
+            - heading "Introduction to Subagents" [level=4] [ref=f5e134]
+            - paragraph [ref=f5e135]: Anthropic
+            - generic [ref=f5e136]: Anthropic — Claude Development
+        - button "View Introduction to Agent Skills certificate full size" [ref=f5e137]:
+          - img "Introduction to Agent Skills certificate from Anthropic" [ref=f5e139]
+          - generic [ref=f5e140]:
+            - heading "Introduction to Agent Skills" [level=4] [ref=f5e141]
+            - paragraph [ref=f5e142]: Anthropic
+            - generic [ref=f5e143]: Anthropic — Claude Development
+        - button "Building with the Claude API — certificate image not yet added" [disabled] [ref=f5e144]:
+          - generic [ref=f5e145]: Certificate image awaiting upload
+          - generic [ref=f5e155]:
+            - heading "Building with the Claude API" [level=4] [ref=f5e156]
+            - paragraph [ref=f5e157]: Anthropic
+            - generic [ref=f5e158]: Anthropic — Claude Development
+        - 'button "View AI Fluency: Framework & Foundations certificate full size" [ref=f5e159]':
+          - 'img "AI Fluency: Framework & Foundations certificate from Anthropic" [ref=f5e161]'
+          - generic [ref=f5e162]:
+            - 'heading "AI Fluency: Framework & Foundations" [level=4] [ref=f5e163]'
+            - paragraph [ref=f5e164]: Anthropic
+            - generic [ref=f5e165]: Anthropic — AI Fluency
+        - button "View AI Fluency for Builders certificate full size" [ref=f5e166]:
+          - img "AI Fluency for Builders certificate from Anthropic" [ref=f5e168]
+          - generic [ref=f5e169]:
+            - heading "AI Fluency for Builders" [level=4] [ref=f5e170]
+            - paragraph [ref=f5e171]: Anthropic
+            - generic [ref=f5e172]: Anthropic — AI Fluency
+        - button "View AI Fluency for Small Businesses certificate full size" [ref=f5e173]:
+          - img "AI Fluency for Small Businesses certificate from Anthropic" [ref=f5e175]
+          - generic [ref=f5e176]:
+            - heading "AI Fluency for Small Businesses" [level=4] [ref=f5e177]
+            - paragraph [ref=f5e178]: Anthropic
+            - generic [ref=f5e179]: Anthropic — AI Fluency
+        - button "View Teaching the AI Fluency Framework certificate full size" [ref=f5e180]:
+          - img "Teaching the AI Fluency Framework certificate from Anthropic" [ref=f5e182]
+          - generic [ref=f5e183]:
+            - heading "Teaching the AI Fluency Framework" [level=4] [ref=f5e184]
+            - paragraph [ref=f5e185]: Anthropic
+            - generic [ref=f5e186]: Anthropic — AI Fluency
+        - button "AI Capabilities and Limitations — certificate image not yet added" [disabled] [ref=f5e187]:
+          - generic [ref=f5e188]: Certificate image awaiting upload
+          - generic [ref=f5e198]:
+            - heading "AI Capabilities and Limitations" [level=4] [ref=f5e199]
+            - paragraph [ref=f5e200]: Anthropic
+            - generic [ref=f5e201]: Anthropic — AI Fluency
+        - button "View Build an AI Agent certificate full size" [ref=f5e202]:
+          - img "Build an AI Agent certificate from IBM SkillsBuild" [ref=f5e204]
+          - generic [ref=f5e205]:
+            - heading "Build an AI Agent" [level=4] [ref=f5e206]
+            - paragraph [ref=f5e207]: IBM SkillsBuild
+            - generic [ref=f5e208]: IBM
+        - button "View Digital Badge — Build an AI Agent certificate full size" [ref=f5e209]:
+          - img "Digital Badge — Build an AI Agent certificate from IBM" [ref=f5e211]
+          - generic [ref=f5e212]:
+            - heading "Digital Badge — Build an AI Agent" [level=4] [ref=f5e213]
+            - paragraph [ref=f5e214]: IBM
+            - generic [ref=f5e215]: IBM
+        - button "View Make Agentic AI Work for You certificate full size" [ref=f5e216]:
+          - img "Make Agentic AI Work for You certificate from IBM SkillsBuild" [ref=f5e218]
+          - generic [ref=f5e219]:
+            - heading "Make Agentic AI Work for You" [level=4] [ref=f5e220]
+            - paragraph [ref=f5e221]: IBM SkillsBuild
+            - generic [ref=f5e222]: IBM
+        - button "View Introduction to RAG certificate full size" [ref=f5e223]:
+          - img "Introduction to RAG certificate from IBM" [ref=f5e225]
+          - generic [ref=f5e226]:
+            - heading "Introduction to RAG" [level=4] [ref=f5e227]
+            - paragraph [ref=f5e228]: IBM
+            - generic [ref=f5e229]: IBM
+        - button "View Unleashing the Power of AI Agents certificate full size" [ref=f5e230]:
+          - img "Unleashing the Power of AI Agents certificate from IBM" [ref=f5e232]
+          - generic [ref=f5e233]:
+            - heading "Unleashing the Power of AI Agents" [level=4] [ref=f5e234]
+            - paragraph [ref=f5e235]: IBM
+            - generic [ref=f5e236]: IBM
+        - 'button "View Intelligent by Design: Build an AI Agent certificate full size" [ref=f5e237]':
+          - 'img "Intelligent by Design: Build an AI Agent certificate from Adobe" [ref=f5e239]'
+          - generic [ref=f5e240]:
+            - 'heading "Intelligent by Design: Build an AI Agent" [level=4] [ref=f5e241]'
+            - paragraph [ref=f5e242]: Adobe
+            - generic [ref=f5e243]: Adobe
+        - button "View Selling Online certificate full size" [ref=f5e244]:
+          - img "Selling Online certificate from HP LIFE" [ref=f5e246]
+          - generic [ref=f5e247]:
+            - heading "Selling Online" [level=4] [ref=f5e248]
+            - paragraph [ref=f5e249]: HP LIFE
+            - generic [ref=f5e250]: HP LIFE
+        - button "View Agentic AI Development certificate full size" [ref=f5e251]:
+          - img "Agentic AI Development certificate" [ref=f5e253]
+          - generic [ref=f5e254]:
+            - heading "Agentic AI Development" [level=4] [ref=f5e255]
+            - paragraph [ref=f5e256]: Institution on record
+            - generic [ref=f5e257]: AI Engineering
+        - button "View Agentic AI Training — Batch 3 certificate full size" [ref=f5e258]:
+          - img "Agentic AI Training — Batch 3 certificate from Saylani Mass IT Training" [ref=f5e260]
+          - generic [ref=f5e261]:
+            - heading "Agentic AI Training — Batch 3" [level=4] [ref=f5e262]
+            - paragraph [ref=f5e263]: Saylani Mass IT Training
+            - generic [ref=f5e264]: AI Engineering
+        - button "View IT Entrance Exam 2026 — Appreciation certificate full size" [ref=f5e265]:
+          - img "IT Entrance Exam 2026 — Appreciation certificate from Saylani Mass IT Training" [ref=f5e267]
+          - generic [ref=f5e268]:
+            - heading "IT Entrance Exam 2026 — Appreciation" [level=4] [ref=f5e269]
+            - paragraph [ref=f5e270]: Saylani Mass IT Training
+            - generic [ref=f5e271]: AI Engineering
+        - button "View IT Training Result Card certificate full size" [ref=f5e272]:
+          - img "IT Training Result Card certificate from Saylani Mass IT Training" [ref=f5e274]
+          - generic [ref=f5e275]:
+            - heading "IT Training Result Card" [level=4] [ref=f5e276]
+            - paragraph [ref=f5e277]: Saylani Mass IT Training
+            - generic [ref=f5e278]: Other Verified
+        - button "View Generative AI for Beginners certificate full size" [ref=f5e279]:
+          - img "Generative AI for Beginners certificate" [ref=f5e281]
+          - generic [ref=f5e282]:
+            - heading "Generative AI for Beginners" [level=4] [ref=f5e283]
+            - paragraph [ref=f5e284]: Institution on record
+            - generic [ref=f5e285]: Other Verified
+        - button "View Introduction to UI/UX Design certificate full size" [ref=f5e286]:
+          - img "Introduction to UI/UX Design certificate" [ref=f5e288]
+          - generic [ref=f5e289]:
+            - heading "Introduction to UI/UX Design" [level=4] [ref=f5e290]
+            - paragraph [ref=f5e291]: Institution on record
+            - generic [ref=f5e292]: UI/UX & Brand Identity
+        - button "View UI/UX Design certificate full size" [ref=f5e293]:
+          - img "UI/UX Design certificate" [ref=f5e295]
+          - generic [ref=f5e296]:
+            - heading "UI/UX Design" [level=4] [ref=f5e297]
+            - paragraph [ref=f5e298]: Institution on record
+            - generic [ref=f5e299]: UI/UX & Brand Identity
+        - button "Brand Identity Specialist — certificate image not yet added" [disabled] [ref=f5e300]:
+          - generic [ref=f5e301]: Certificate image awaiting upload
+          - generic [ref=f5e311]:
+            - heading "Brand Identity Specialist" [level=4] [ref=f5e312]
+            - paragraph [ref=f5e313]: Le Wagon
+            - generic [ref=f5e314]: UI/UX & Brand Identity
+        - button "Complete UI/UX Design — certificate image not yet added" [disabled] [ref=f5e315]:
+          - generic [ref=f5e316]: Certificate image awaiting upload
+          - generic [ref=f5e326]:
+            - heading "Complete UI/UX Design" [level=4] [ref=f5e327]
+            - paragraph [ref=f5e328]: Le Wagon
+            - generic [ref=f5e329]: UI/UX & Brand Identity
+        - button "Generative AI Certification — certificate image not yet added" [disabled] [ref=f5e330]:
+          - generic [ref=f5e331]: Certificate image awaiting upload
+          - generic [ref=f5e341]:
+            - heading "Generative AI Certification" [level=4] [ref=f5e342]
+            - paragraph [ref=f5e343]: SkillUp
+            - generic [ref=f5e344]: Other Verified
+  - contentinfo [ref=f5e345]:
+    - generic [ref=f5e346]:
+      - generic [ref=f5e347]:
+        - generic [ref=f5e348]:
+          - link [ref=f5e349] [cursor=pointer]:
+            - /url: /
+            - text: Abdul
+            - emphasis [ref=f5e351]: Samad
+          - paragraph [ref=f5e352]: Agentic AI Engineer & Forward Deployed Engineer in Karachi, Pakistan. Building intelligent systems for the real world.
+        - navigation "Site" [ref=f5e353]:
+          - heading "Site" [level=5] [ref=f5e354]
+          - link "About" [ref=f5e355] [cursor=pointer]:
+            - /url: /#about
+          - link "Engineering" [ref=f5e356] [cursor=pointer]:
+            - /url: /#engineering
+          - link "Skills" [ref=f5e357] [cursor=pointer]:
+            - /url: /#skills
+          - link "Projects" [ref=f5e358] [cursor=pointer]:
+            - /url: /#projects
+          - link "Certifications" [ref=f5e359] [cursor=pointer]:
+            - /url: /certifications
+          - link "Contact" [ref=f5e360] [cursor=pointer]:
+            - /url: /#contact
+        - navigation "Case studies" [ref=f5e361]:
+          - heading "Case studies" [level=5] [ref=f5e362]
+          - link "Multi-Agent Fraud Detection" [ref=f5e363] [cursor=pointer]:
+            - /url: /projects/agentic-fraud-detection
+          - link "MCP Servers" [ref=f5e364] [cursor=pointer]:
+            - /url: /projects/mcp-servers
+          - link "AI Teaching Assistant" [ref=f5e365] [cursor=pointer]:
+            - /url: /projects/ai-teaching-assistant
+          - link "OpenClaw Automation" [ref=f5e366] [cursor=pointer]:
+            - /url: /projects/openclaw-automation
+        - generic [ref=f5e367]:
+          - heading "Reach" [level=5] [ref=f5e368]
+          - link "abdulsammad14a1947@gmail.com" [ref=f5e369] [cursor=pointer]:
+            - /url: mailto:abdulsammad14a1947@gmail.com
+          - link "LinkedIn" [ref=f5e370] [cursor=pointer]:
+            - /url: https://linkedin.com/in/abdul-samad-b66b7b373
+          - link "GitHub" [ref=f5e371] [cursor=pointer]:
+            - /url: https://github.com/abdulsammad-lgtm
+      - generic [ref=f5e372]:
+        - generic [ref=f5e373]: © 2026 Abdul Samad · Karachi, Pakistan
+        - generic [ref=f5e374]:
+          - link "LinkedIn" [ref=f5e375] [cursor=pointer]:
+            - /url: https://linkedin.com/in/abdul-samad-b66b7b373
+          - link "GitHub" [ref=f5e380] [cursor=pointer]:
+            - /url: https://github.com/abdulsammad-lgtm
+          - link "Instagram" [ref=f5e384] [cursor=pointer]:
+            - /url: https://instagram.com/@Agentic_sam
+          - link "Email" [ref=f5e388] [cursor=pointer]:
+            - /url: mailto:abdulsammad14a1947@gmail.com

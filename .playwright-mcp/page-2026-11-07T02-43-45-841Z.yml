@@ -1,0 +1,695 @@
+- generic [ref=e2]:
+  - generic [ref=e3]: Free shipping on orders over PKR 10,000
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - button "Open menu" [ref=e6]
+      - link "Zenith Mens — home" [ref=e8] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=e9]: zenith man
+      - generic [ref=e12]:
+        - link "Search products" [ref=e13] [cursor=pointer]:
+          - /url: /search
+        - link "Your account" [ref=e17] [cursor=pointer]:
+          - /url: /account
+        - link "Your wishlist" [ref=e21] [cursor=pointer]:
+          - /url: /account?tab=wishlist
+        - link "Shopping bag" [ref=e24] [cursor=pointer]:
+          - /url: /cart
+  - main [ref=e28]:
+    - generic [ref=e31]:
+      - paragraph [ref=e32]: Premium menswear
+      - heading "Zenith Mens" [level=1] [ref=e33]
+      - paragraph [ref=e34]: Modern menswear — refined basics and relaxed silhouettes for everyday wear in Pakistan.
+      - generic [ref=e35]:
+        - link "Shop New Season" [ref=e36] [cursor=pointer]:
+          - /url: /collections/new-season
+        - link "New arrivals" [ref=e37] [cursor=pointer]:
+          - /url: /shop?flag=new
+    - generic [ref=e39]:
+      - generic [ref=e41]:
+        - paragraph [ref=e42]: Browse
+        - heading "Shop by category" [level=2] [ref=e43]
+      - generic [ref=e44]:
+        - link "T Tracksuits 2 pieces" [ref=e45] [cursor=pointer]:
+          - /url: /shop/tracksuits
+          - generic [ref=e46]: T
+          - generic [ref=e49]:
+            - heading "Tracksuits" [level=3] [ref=e50]
+            - generic [ref=e51]: 2 pieces
+        - link "W Winter jacket 2 pieces" [ref=e52] [cursor=pointer]:
+          - /url: /shop/jacket
+          - generic [ref=e53]: W
+          - generic [ref=e56]:
+            - heading "Winter jacket" [level=3] [ref=e57]
+            - generic [ref=e58]: 2 pieces
+        - link "W Winter suit 2 pieces" [ref=e59] [cursor=pointer]:
+          - /url: /shop/suit
+          - generic [ref=e60]: W
+          - generic [ref=e63]:
+            - heading "Winter suit" [level=3] [ref=e64]
+            - generic [ref=e65]: 2 pieces
+        - link "S Shirts 7 pieces" [ref=e66] [cursor=pointer]:
+          - /url: /shop/shirts
+          - generic [ref=e67]: S
+          - generic [ref=e70]:
+            - heading "Shirts" [level=3] [ref=e71]
+            - generic [ref=e72]: 7 pieces
+        - link "S Sweatshirts 1 pieces" [ref=e73] [cursor=pointer]:
+          - /url: /shop/sweatshirts
+          - generic [ref=e74]: S
+          - generic [ref=e77]:
+            - heading "Sweatshirts" [level=3] [ref=e78]
+            - generic [ref=e79]: 1 pieces
+        - link "H Hoodies 2 pieces" [ref=e80] [cursor=pointer]:
+          - /url: /shop/hoodies
+          - generic [ref=e81]: H
+          - generic [ref=e84]:
+            - heading "Hoodies" [level=3] [ref=e85]
+            - generic [ref=e86]: 2 pieces
+        - link "P Pants 3 pieces" [ref=e87] [cursor=pointer]:
+          - /url: /shop/pants
+          - generic [ref=e88]: P
+          - generic [ref=e91]:
+            - heading "Pants" [level=3] [ref=e92]
+            - generic [ref=e93]: 3 pieces
+        - link "T Trousers 1 pieces" [ref=e94] [cursor=pointer]:
+          - /url: /shop/trousers
+          - generic [ref=e95]: T
+          - generic [ref=e98]:
+            - heading "Trousers" [level=3] [ref=e99]
+            - generic [ref=e100]: 1 pieces
+        - link "B Baggy Trousers 9 pieces" [ref=e101] [cursor=pointer]:
+          - /url: /shop/baggy-trousers
+          - generic [ref=e102]: B
+          - generic [ref=e105]:
+            - heading "Baggy Trousers" [level=3] [ref=e106]
+            - generic [ref=e107]: 9 pieces
+        - link "J Jackets 1 pieces" [ref=e108] [cursor=pointer]:
+          - /url: /shop/jackets
+          - generic [ref=e109]: J
+          - generic [ref=e112]:
+            - heading "Jackets" [level=3] [ref=e113]
+            - generic [ref=e114]: 1 pieces
+    - generic [ref=e116]:
+      - generic [ref=e117]:
+        - generic [ref=e118]:
+          - paragraph [ref=e119]: Just landed
+          - heading "New Arrivals" [level=2] [ref=e120]
+        - link "View all →" [ref=e121] [cursor=pointer]:
+          - /url: /shop?flag=new
+      - generic [ref=e122]:
+        - article [ref=e123]:
+          - link "Colorblock Zip Jacket - Black White New Jackets Colorblock Zip Jacket - Black White Rs 2,599 2 colours" [ref=e124] [cursor=pointer]:
+            - /url: /product/colorblock-zip-jacket-black-white
+            - generic [ref=e125]:
+              - img "Colorblock Zip Jacket - Black White" [ref=e126]
+              - generic [ref=e127]: New
+            - generic [ref=e129]:
+              - paragraph [ref=e130]: Jackets
+              - heading "Colorblock Zip Jacket - Black White" [level=3] [ref=e131]
+              - generic [ref=e132]:
+                - generic [ref=e133]: Rs 2,599
+                - generic [ref=e135]: 2 colours
+        - article [ref=e136]:
+          - link "New Polo Shirts New Shirts New Polo Shirts Rs 1,299 5 colours" [ref=e137] [cursor=pointer]:
+            - /url: /product/p
+            - generic [ref=e138]:
+              - img "New Polo Shirts" [ref=e139]
+              - generic [ref=e140]: New
+            - generic [ref=e142]:
+              - paragraph [ref=e143]: Shirts
+              - heading "New Polo Shirts" [level=3] [ref=e144]
+              - generic [ref=e145]:
+                - generic [ref=e146]: Rs 1,299
+                - generic [ref=e148]: 5 colours
+        - article [ref=e149]:
+          - link "Printed T-Shirts 43% off New Shirts Printed T-Shirts Rs 1,999 Rs 3,500 3 colours" [ref=e150] [cursor=pointer]:
+            - /url: /product/o
+            - generic [ref=e151]:
+              - img "Printed T-Shirts" [ref=e152]
+              - generic [ref=e153]:
+                - generic [ref=e154]: 43% off
+                - generic [ref=e155]: New
+            - generic [ref=e156]:
+              - paragraph [ref=e157]: Shirts
+              - heading "Printed T-Shirts" [level=3] [ref=e158]
+              - generic [ref=e159]:
+                - generic [ref=e160]:
+                  - generic [ref=e161]: Rs 1,999
+                  - generic [ref=e162]: Rs 3,500
+                - generic [ref=e163]: 3 colours
+        - article [ref=e164]:
+          - link "old money 50% off New Shirts old money Rs 1,499 Rs 3,000 3 colours" [ref=e165] [cursor=pointer]:
+            - /url: /product/c
+            - generic [ref=e166]:
+              - img "old money" [ref=e167]
+              - generic [ref=e168]:
+                - generic [ref=e169]: 50% off
+                - generic [ref=e170]: New
+            - generic [ref=e171]:
+              - paragraph [ref=e172]: Shirts
+              - heading "old money" [level=3] [ref=e173]
+              - generic [ref=e174]:
+                - generic [ref=e175]:
+                  - generic [ref=e176]: Rs 1,499
+                  - generic [ref=e177]: Rs 3,000
+                - generic [ref=e178]: 3 colours
+        - article [ref=e179]:
+          - link "old money. 43% off New Shirts old money. Rs 1,999 Rs 3,500 3 colours" [ref=e180] [cursor=pointer]:
+            - /url: /product/z
+            - generic [ref=e181]:
+              - img "old money." [ref=e182]
+              - generic [ref=e183]:
+                - generic [ref=e184]: 43% off
+                - generic [ref=e185]: New
+            - generic [ref=e186]:
+              - paragraph [ref=e187]: Shirts
+              - heading "old money." [level=3] [ref=e188]
+              - generic [ref=e189]:
+                - generic [ref=e190]:
+                  - generic [ref=e191]: Rs 1,999
+                  - generic [ref=e192]: Rs 3,500
+                - generic [ref=e193]: 3 colours
+        - article [ref=e194]:
+          - link "Classic Sweatpants 47% off New Pants Classic Sweatpants Rs 1,600 Rs 3,000 3 colours" [ref=e195] [cursor=pointer]:
+            - /url: /product/s
+            - generic [ref=e196]:
+              - img "Classic Sweatpants" [ref=e197]
+              - generic [ref=e198]:
+                - generic [ref=e199]: 47% off
+                - generic [ref=e200]: New
+            - generic [ref=e201]:
+              - paragraph [ref=e202]: Pants
+              - heading "Classic Sweatpants" [level=3] [ref=e203]
+              - generic [ref=e204]:
+                - generic [ref=e205]:
+                  - generic [ref=e206]: Rs 1,600
+                  - generic [ref=e207]: Rs 3,000
+                - generic [ref=e208]: 3 colours
+        - article [ref=e209]:
+          - link "Denim jacket 45% off New Winter jacket Denim jacket Rs 3,299 Rs 6,000 3 colours" [ref=e210] [cursor=pointer]:
+            - /url: /product/g
+            - generic [ref=e211]:
+              - img "Denim jacket" [ref=e212]
+              - generic [ref=e213]:
+                - generic [ref=e214]: 45% off
+                - generic [ref=e215]: New
+            - generic [ref=e216]:
+              - paragraph [ref=e217]: Winter jacket
+              - heading "Denim jacket" [level=3] [ref=e218]
+              - generic [ref=e219]:
+                - generic [ref=e220]:
+                  - generic [ref=e221]: Rs 3,299
+                  - generic [ref=e222]: Rs 6,000
+                - generic [ref=e223]: 3 colours
+        - article [ref=e224]:
+          - link "GEN-z like it New Baggy Trousers GEN-z like it Rs 1,650 3 colours" [ref=e225] [cursor=pointer]:
+            - /url: /product/genz
+            - generic [ref=e226]:
+              - img "GEN-z like it" [ref=e227]
+              - generic [ref=e228]: New
+            - generic [ref=e230]:
+              - paragraph [ref=e231]: Baggy Trousers
+              - heading "GEN-z like it" [level=3] [ref=e232]
+              - generic [ref=e233]:
+                - generic [ref=e234]: Rs 1,650
+                - generic [ref=e236]: 3 colours
+    - generic [ref=e238]:
+      - generic [ref=e240]:
+        - paragraph [ref=e241]: Curated
+        - heading "Featured collections" [level=2] [ref=e242]
+        - paragraph [ref=e243]: Considered edits for the season.
+      - generic [ref=e244]:
+        - link "Suit Suit Winter suits — sharp, warm and built for the season. Available in Black, sizes S / M / L. Shop the edit" [ref=e245] [cursor=pointer]:
+          - /url: /shop?collection=suit
+          - img "Suit" [ref=e247]
+          - heading "Suit" [level=3] [ref=e248]
+          - paragraph [ref=e249]: Winter suits — sharp, warm and built for the season. Available in Black, sizes S / M / L.
+          - generic [ref=e250]: Shop the edit
+        - link "Tracksuits Tracksuits Tracksuits — camo and colorblock sets for training and everyday. Sizes and colours vary by style. Shop the edit" [ref=e251] [cursor=pointer]:
+          - /url: /shop?collection=tracksuits
+          - img "Tracksuits" [ref=e253]
+          - heading "Tracksuits" [level=3] [ref=e254]
+          - paragraph [ref=e255]: Tracksuits — camo and colorblock sets for training and everyday. Sizes and colours vary by style.
+          - generic [ref=e256]: Shop the edit
+    - generic [ref=e258]:
+      - generic [ref=e259]:
+        - generic [ref=e260]:
+          - paragraph [ref=e261]: Loved by many
+          - heading "Best Sellers" [level=2] [ref=e262]
+        - link "View all →" [ref=e263] [cursor=pointer]:
+          - /url: /shop?flag=bestseller
+      - generic [ref=e264]:
+        - article [ref=e265]:
+          - link "4 pocket 34% off New Baggy Trousers 4 pocket Rs 2,300 Rs 3,500 2 colours" [ref=e266] [cursor=pointer]:
+            - /url: /product/hot
+            - generic [ref=e267]:
+              - img "4 pocket" [ref=e268]
+              - generic [ref=e269]:
+                - generic [ref=e270]: 34% off
+                - generic [ref=e271]: New
+            - generic [ref=e272]:
+              - paragraph [ref=e273]: Baggy Trousers
+              - heading "4 pocket" [level=3] [ref=e274]
+              - generic [ref=e275]:
+                - generic [ref=e276]:
+                  - generic [ref=e277]: Rs 2,300
+                  - generic [ref=e278]: Rs 3,500
+                - generic [ref=e279]: 2 colours
+        - article [ref=e280]:
+          - link "8 pocket baggy trousers, new design 42% off New Baggy Trousers 8 pocket baggy trousers, new design Rs 2,599 Rs 4,500 3 colours" [ref=e281] [cursor=pointer]:
+            - /url: /product/ocket
+            - generic [ref=e282]:
+              - img "8 pocket baggy trousers, new design" [ref=e283]
+              - generic [ref=e284]:
+                - generic [ref=e285]: 42% off
+                - generic [ref=e286]: New
+            - generic [ref=e287]:
+              - paragraph [ref=e288]: Baggy Trousers
+              - heading "8 pocket baggy trousers, new design" [level=3] [ref=e289]
+              - generic [ref=e290]:
+                - generic [ref=e291]:
+                  - generic [ref=e292]: Rs 2,599
+                  - generic [ref=e293]: Rs 4,500
+                - generic [ref=e294]: 3 colours
+        - article [ref=e295]:
+          - link "Baggy Cargo Trouser 60% off New Baggy Trousers Baggy Cargo Trouser Rs 1,600 Rs 3,999 3 colours" [ref=e296] [cursor=pointer]:
+            - /url: /product/bt-baggy-cargo-trouser
+            - generic [ref=e297]:
+              - img "Baggy Cargo Trouser" [ref=e298]
+              - generic [ref=e299]:
+                - generic [ref=e300]: 60% off
+                - generic [ref=e301]: New
+            - generic [ref=e302]:
+              - paragraph [ref=e303]: Baggy Trousers
+              - heading "Baggy Cargo Trouser" [level=3] [ref=e304]
+              - generic [ref=e305]:
+                - generic [ref=e306]:
+                  - generic [ref=e307]: Rs 1,600
+                  - generic [ref=e308]: Rs 3,999
+                - generic [ref=e309]: 3 colours
+        - article [ref=e310]:
+          - link "old money's 2026 56% off New Shirts old money's 2026 Rs 1,999 Rs 4,500 4 colours" [ref=e311] [cursor=pointer]:
+            - /url: /product/best
+            - generic [ref=e312]:
+              - img "old money's 2026" [ref=e313]
+              - generic [ref=e314]:
+                - generic [ref=e315]: 56% off
+                - generic [ref=e316]: New
+            - generic [ref=e317]:
+              - paragraph [ref=e318]: Shirts
+              - heading "old money's 2026" [level=3] [ref=e319]
+              - generic [ref=e320]:
+                - generic [ref=e321]:
+                  - generic [ref=e322]: Rs 1,999
+                  - generic [ref=e323]: Rs 4,500
+                - generic [ref=e324]: 4 colours
+        - article [ref=e325]:
+          - link "Now Trend Tee - Brown New T-shirts Now Trend Tee - Brown Rs 1,499" [ref=e326] [cursor=pointer]:
+            - /url: /product/now-trend-tee-brown
+            - generic [ref=e327]:
+              - img "Now Trend Tee - Brown" [ref=e328]
+              - generic [ref=e329]: New
+            - generic [ref=e331]:
+              - paragraph [ref=e332]: T-shirts
+              - heading "Now Trend Tee - Brown" [level=3] [ref=e333]
+              - generic [ref=e334]: Rs 1,499
+        - article [ref=e337]:
+          - link "Classic Sweatpants 47% off New Pants Classic Sweatpants Rs 1,600 Rs 3,000 3 colours" [ref=e338] [cursor=pointer]:
+            - /url: /product/s
+            - generic [ref=e339]:
+              - img "Classic Sweatpants" [ref=e340]
+              - generic [ref=e341]:
+                - generic [ref=e342]: 47% off
+                - generic [ref=e343]: New
+            - generic [ref=e344]:
+              - paragraph [ref=e345]: Pants
+              - heading "Classic Sweatpants" [level=3] [ref=e346]
+              - generic [ref=e347]:
+                - generic [ref=e348]:
+                  - generic [ref=e349]: Rs 1,600
+                  - generic [ref=e350]: Rs 3,000
+                - generic [ref=e351]: 3 colours
+        - article [ref=e352]:
+          - link "old money 50% off New Shirts old money Rs 1,499 Rs 3,000 3 colours" [ref=e353] [cursor=pointer]:
+            - /url: /product/c
+            - generic [ref=e354]:
+              - img "old money" [ref=e355]
+              - generic [ref=e356]:
+                - generic [ref=e357]: 50% off
+                - generic [ref=e358]: New
+            - generic [ref=e359]:
+              - paragraph [ref=e360]: Shirts
+              - heading "old money" [level=3] [ref=e361]
+              - generic [ref=e362]:
+                - generic [ref=e363]:
+                  - generic [ref=e364]: Rs 1,499
+                  - generic [ref=e365]: Rs 3,000
+                - generic [ref=e366]: 3 colours
+        - article [ref=e367]:
+          - link "Round neck shirts 54% off T-shirts Round neck shirts Rs 1,199 Rs 2,600 2 colours" [ref=e368] [cursor=pointer]:
+            - /url: /product/a
+            - generic [ref=e369]:
+              - img "Round neck shirts" [ref=e370]
+              - generic [ref=e371]: 54% off
+            - generic [ref=e373]:
+              - paragraph [ref=e374]: T-shirts
+              - heading "Round neck shirts" [level=3] [ref=e375]
+              - generic [ref=e376]:
+                - generic [ref=e377]:
+                  - generic [ref=e378]: Rs 1,199
+                  - generic [ref=e379]: Rs 2,600
+                - generic [ref=e380]: 2 colours
+    - generic [ref=e382]:
+      - generic [ref=e383]:
+        - generic [ref=e384]:
+          - paragraph [ref=e385]: Hand-picked
+          - heading "Featured" [level=2] [ref=e386]
+        - link "View all →" [ref=e387] [cursor=pointer]:
+          - /url: /shop?flag=featured
+      - generic [ref=e388]:
+        - article [ref=e389]:
+          - link "New Polo Shirts New Shirts New Polo Shirts Rs 1,299 5 colours" [ref=e390] [cursor=pointer]:
+            - /url: /product/p
+            - generic [ref=e391]:
+              - img "New Polo Shirts" [ref=e392]
+              - generic [ref=e393]: New
+            - generic [ref=e395]:
+              - paragraph [ref=e396]: Shirts
+              - heading "New Polo Shirts" [level=3] [ref=e397]
+              - generic [ref=e398]:
+                - generic [ref=e399]: Rs 1,299
+                - generic [ref=e401]: 5 colours
+        - article [ref=e402]:
+          - link "old money. 43% off New Shirts old money. Rs 1,999 Rs 3,500 3 colours" [ref=e403] [cursor=pointer]:
+            - /url: /product/z
+            - generic [ref=e404]:
+              - img "old money." [ref=e405]
+              - generic [ref=e406]:
+                - generic [ref=e407]: 43% off
+                - generic [ref=e408]: New
+            - generic [ref=e409]:
+              - paragraph [ref=e410]: Shirts
+              - heading "old money." [level=3] [ref=e411]
+              - generic [ref=e412]:
+                - generic [ref=e413]:
+                  - generic [ref=e414]: Rs 1,999
+                  - generic [ref=e415]: Rs 3,500
+                - generic [ref=e416]: 3 colours
+        - article [ref=e417]:
+          - link "GEYM 43% off Baggy Trousers GEYM Rs 1,999 Rs 3,500 3 colours" [ref=e418] [cursor=pointer]:
+            - /url: /product/mans
+            - generic [ref=e419]:
+              - img "GEYM" [ref=e420]
+              - generic [ref=e421]: 43% off
+            - generic [ref=e423]:
+              - paragraph [ref=e424]: Baggy Trousers
+              - heading "GEYM" [level=3] [ref=e425]
+              - generic [ref=e426]:
+                - generic [ref=e427]:
+                  - generic [ref=e428]: Rs 1,999
+                  - generic [ref=e429]: Rs 3,500
+                - generic [ref=e430]: 3 colours
+        - article [ref=e431]:
+          - link "GEN-z like it New Baggy Trousers GEN-z like it Rs 1,650 3 colours" [ref=e432] [cursor=pointer]:
+            - /url: /product/genz
+            - generic [ref=e433]:
+              - img "GEN-z like it" [ref=e434]
+              - generic [ref=e435]: New
+            - generic [ref=e437]:
+              - paragraph [ref=e438]: Baggy Trousers
+              - heading "GEN-z like it" [level=3] [ref=e439]
+              - generic [ref=e440]:
+                - generic [ref=e441]: Rs 1,650
+                - generic [ref=e443]: 3 colours
+        - article [ref=e444]:
+          - link "Winter jacket 50% off New Winter jacket Winter jacket Rs 1,700 Rs 3,400 3 colours" [ref=e445] [cursor=pointer]:
+            - /url: /product/jacket
+            - generic [ref=e446]:
+              - img "Winter jacket" [ref=e447]
+              - generic [ref=e448]:
+                - generic [ref=e449]: 50% off
+                - generic [ref=e450]: New
+            - generic [ref=e451]:
+              - paragraph [ref=e452]: Winter jacket
+              - heading "Winter jacket" [level=3] [ref=e453]
+              - generic [ref=e454]:
+                - generic [ref=e455]:
+                  - generic [ref=e456]: Rs 1,700
+                  - generic [ref=e457]: Rs 3,400
+                - generic [ref=e458]: 3 colours
+        - article [ref=e459]:
+          - link "Baggy Style Gen Z Trousers 40% off New Baggy Trousers Baggy Style Gen Z Trousers Rs 1,499 Rs 2,500 3 colours" [ref=e460] [cursor=pointer]:
+            - /url: /product/hd-zip-through-hoodie
+            - generic [ref=e461]:
+              - img "Baggy Style Gen Z Trousers" [ref=e462]
+              - generic [ref=e463]:
+                - generic [ref=e464]: 40% off
+                - generic [ref=e465]: New
+            - generic [ref=e466]:
+              - paragraph [ref=e467]: Baggy Trousers
+              - heading "Baggy Style Gen Z Trousers" [level=3] [ref=e468]
+              - generic [ref=e469]:
+                - generic [ref=e470]:
+                  - generic [ref=e471]: Rs 1,499
+                  - generic [ref=e472]: Rs 2,500
+                - generic [ref=e473]: 3 colours
+    - generic [ref=e475]:
+      - generic [ref=e476]:
+        - generic [ref=e477]:
+          - paragraph [ref=e478]: The edit
+          - heading "Everything, one place" [level=2] [ref=e479]
+        - link "Shop all →" [ref=e480] [cursor=pointer]:
+          - /url: /shop
+      - generic [ref=e481]:
+        - article [ref=e482]:
+          - link "Colorblock Zip Jacket - Black White New Jackets Colorblock Zip Jacket - Black White Rs 2,599 2 colours" [ref=e483] [cursor=pointer]:
+            - /url: /product/colorblock-zip-jacket-black-white
+            - generic [ref=e484]:
+              - img "Colorblock Zip Jacket - Black White" [ref=e485]
+              - generic [ref=e486]: New
+            - generic [ref=e488]:
+              - paragraph [ref=e489]: Jackets
+              - heading "Colorblock Zip Jacket - Black White" [level=3] [ref=e490]
+              - generic [ref=e491]:
+                - generic [ref=e492]: Rs 2,599
+                - generic [ref=e494]: 2 colours
+        - article [ref=e495]:
+          - link "New Polo Shirts New Shirts New Polo Shirts Rs 1,299 5 colours" [ref=e496] [cursor=pointer]:
+            - /url: /product/p
+            - generic [ref=e497]:
+              - img "New Polo Shirts" [ref=e498]
+              - generic [ref=e499]: New
+            - generic [ref=e501]:
+              - paragraph [ref=e502]: Shirts
+              - heading "New Polo Shirts" [level=3] [ref=e503]
+              - generic [ref=e504]:
+                - generic [ref=e505]: Rs 1,299
+                - generic [ref=e507]: 5 colours
+        - article [ref=e508]:
+          - link "Printed T-Shirts 43% off New Shirts Printed T-Shirts Rs 1,999 Rs 3,500 3 colours" [ref=e509] [cursor=pointer]:
+            - /url: /product/o
+            - generic [ref=e510]:
+              - img "Printed T-Shirts" [ref=e511]
+              - generic [ref=e512]:
+                - generic [ref=e513]: 43% off
+                - generic [ref=e514]: New
+            - generic [ref=e515]:
+              - paragraph [ref=e516]: Shirts
+              - heading "Printed T-Shirts" [level=3] [ref=e517]
+              - generic [ref=e518]:
+                - generic [ref=e519]:
+                  - generic [ref=e520]: Rs 1,999
+                  - generic [ref=e521]: Rs 3,500
+                - generic [ref=e522]: 3 colours
+        - article [ref=e523]:
+          - link "old money 50% off New Shirts old money Rs 1,499 Rs 3,000 3 colours" [ref=e524] [cursor=pointer]:
+            - /url: /product/c
+            - generic [ref=e525]:
+              - img "old money" [ref=e526]
+              - generic [ref=e527]:
+                - generic [ref=e528]: 50% off
+                - generic [ref=e529]: New
+            - generic [ref=e530]:
+              - paragraph [ref=e531]: Shirts
+              - heading "old money" [level=3] [ref=e532]
+              - generic [ref=e533]:
+                - generic [ref=e534]:
+                  - generic [ref=e535]: Rs 1,499
+                  - generic [ref=e536]: Rs 3,000
+                - generic [ref=e537]: 3 colours
+        - article [ref=e538]:
+          - link "Round neck shirts 54% off T-shirts Round neck shirts Rs 1,199 Rs 2,600 2 colours" [ref=e539] [cursor=pointer]:
+            - /url: /product/a
+            - generic [ref=e540]:
+              - img "Round neck shirts" [ref=e541]
+              - generic [ref=e542]: 54% off
+            - generic [ref=e544]:
+              - paragraph [ref=e545]: T-shirts
+              - heading "Round neck shirts" [level=3] [ref=e546]
+              - generic [ref=e547]:
+                - generic [ref=e548]:
+                  - generic [ref=e549]: Rs 1,199
+                  - generic [ref=e550]: Rs 2,600
+                - generic [ref=e551]: 2 colours
+        - article [ref=e552]:
+          - link "old money. 43% off New Shirts old money. Rs 1,999 Rs 3,500 3 colours" [ref=e553] [cursor=pointer]:
+            - /url: /product/z
+            - generic [ref=e554]:
+              - img "old money." [ref=e555]
+              - generic [ref=e556]:
+                - generic [ref=e557]: 43% off
+                - generic [ref=e558]: New
+            - generic [ref=e559]:
+              - paragraph [ref=e560]: Shirts
+              - heading "old money." [level=3] [ref=e561]
+              - generic [ref=e562]:
+                - generic [ref=e563]:
+                  - generic [ref=e564]: Rs 1,999
+                  - generic [ref=e565]: Rs 3,500
+                - generic [ref=e566]: 3 colours
+        - article [ref=e567]:
+          - link "Classic Sweatpants 47% off New Pants Classic Sweatpants Rs 1,600 Rs 3,000 3 colours" [ref=e568] [cursor=pointer]:
+            - /url: /product/s
+            - generic [ref=e569]:
+              - img "Classic Sweatpants" [ref=e570]
+              - generic [ref=e571]:
+                - generic [ref=e572]: 47% off
+                - generic [ref=e573]: New
+            - generic [ref=e574]:
+              - paragraph [ref=e575]: Pants
+              - heading "Classic Sweatpants" [level=3] [ref=e576]
+              - generic [ref=e577]:
+                - generic [ref=e578]:
+                  - generic [ref=e579]: Rs 1,600
+                  - generic [ref=e580]: Rs 3,000
+                - generic [ref=e581]: 3 colours
+        - article [ref=e582]:
+          - link "Denim jacket 45% off New Winter jacket Denim jacket Rs 3,299 Rs 6,000 3 colours" [ref=e583] [cursor=pointer]:
+            - /url: /product/g
+            - generic [ref=e584]:
+              - img "Denim jacket" [ref=e585]
+              - generic [ref=e586]:
+                - generic [ref=e587]: 45% off
+                - generic [ref=e588]: New
+            - generic [ref=e589]:
+              - paragraph [ref=e590]: Winter jacket
+              - heading "Denim jacket" [level=3] [ref=e591]
+              - generic [ref=e592]:
+                - generic [ref=e593]:
+                  - generic [ref=e594]: Rs 3,299
+                  - generic [ref=e595]: Rs 6,000
+                - generic [ref=e596]: 3 colours
+    - generic [ref=e599]:
+      - generic [ref=e600]:
+        - paragraph [ref=e601]: The label
+        - heading "Built around the basics" [level=2] [ref=e602]
+      - paragraph [ref=e604]: Zenith Mens focuses on fit, fabric feel and honest pricing. No noise — just pieces that earn their place in a wardrobe.
+    - generic [ref=e608]:
+      - heading "New season, quieter tones" [level=2] [ref=e609]
+      - paragraph [ref=e610]: Fresh cuts across tees, shirts and trousers — built to layer and rotate.
+      - link "Explore the collection" [ref=e611] [cursor=pointer]:
+        - /url: /collections/new-season
+    - generic [ref=e613]:
+      - generic [ref=e615]:
+        - paragraph [ref=e616]: Reviews
+        - heading "What customers say" [level=2] [ref=e617]
+        - paragraph [ref=e618]: Reviews are published only from verified purchases, after moderation.
+      - generic [ref=e619]:
+        - heading "No reviews yet" [level=3] [ref=e622]
+        - paragraph [ref=e623]: Once customers review their purchases, verified reviews will appear here.
+        - link "Explore the collection" [ref=e624] [cursor=pointer]:
+          - /url: /shop
+  - contentinfo [ref=e625]:
+    - generic [ref=e626]:
+      - generic [ref=e627]:
+        - link "Zenith Mens — home" [ref=e628] [cursor=pointer]:
+          - /url: /
+          - generic [aria-hidden] [ref=e629]: zenith man
+        - paragraph [ref=e632]: Premium menswear — tees, shirts, hoodies, pants and trousers. Designed in Pakistan.
+        - generic [ref=e633]:
+          - link "zenithman9@gmail.com" [ref=e634] [cursor=pointer]:
+            - /url: mailto:zenithman9@gmail.com
+          - link "03313982334" [ref=e638] [cursor=pointer]:
+            - /url: tel:03313982334
+      - navigation "Shop" [ref=e641]:
+        - heading "Shop" [level=3] [ref=e642]
+        - list [ref=e643]:
+          - listitem [ref=e644]:
+            - link "All products" [ref=e645] [cursor=pointer]:
+              - /url: /shop
+          - listitem [ref=e646]:
+            - link "New arrivals" [ref=e647] [cursor=pointer]:
+              - /url: /shop?flag=new
+          - listitem [ref=e648]:
+            - link "Tracksuits" [ref=e649] [cursor=pointer]:
+              - /url: /shop/tracksuits
+          - listitem [ref=e650]:
+            - link "Winter jacket" [ref=e651] [cursor=pointer]:
+              - /url: /shop/jacket
+          - listitem [ref=e652]:
+            - link "Winter suit" [ref=e653] [cursor=pointer]:
+              - /url: /shop/suit
+          - listitem [ref=e654]:
+            - link "Shirts" [ref=e655] [cursor=pointer]:
+              - /url: /shop/shirts
+          - listitem [ref=e656]:
+            - link "Sweatshirts" [ref=e657] [cursor=pointer]:
+              - /url: /shop/sweatshirts
+          - listitem [ref=e658]:
+            - link "Hoodies" [ref=e659] [cursor=pointer]:
+              - /url: /shop/hoodies
+          - listitem [ref=e660]:
+            - link "Pants" [ref=e661] [cursor=pointer]:
+              - /url: /shop/pants
+          - listitem [ref=e662]:
+            - link "Trousers" [ref=e663] [cursor=pointer]:
+              - /url: /shop/trousers
+      - navigation "Support" [ref=e664]:
+        - heading "Support" [level=3] [ref=e665]
+        - list [ref=e666]:
+          - listitem [ref=e667]:
+            - link "Contact us" [ref=e668] [cursor=pointer]:
+              - /url: /contact
+          - listitem [ref=e669]:
+            - link "FAQs" [ref=e670] [cursor=pointer]:
+              - /url: /faqs
+          - listitem [ref=e671]:
+            - link "Shipping" [ref=e672] [cursor=pointer]:
+              - /url: /shipping-policy
+          - listitem [ref=e673]:
+            - link "Returns & exchanges" [ref=e674] [cursor=pointer]:
+              - /url: /returns
+          - listitem [ref=e675]:
+            - link "Size guide" [ref=e676] [cursor=pointer]:
+              - /url: /size-guide
+      - generic [ref=e677]:
+        - heading "Company" [level=3] [ref=e678]
+        - list [ref=e679]:
+          - listitem [ref=e680]:
+            - link "About" [ref=e681] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e682]:
+            - link "Privacy policy" [ref=e683] [cursor=pointer]:
+              - /url: /privacy
+          - listitem [ref=e684]:
+            - link "Terms of service" [ref=e685] [cursor=pointer]:
+              - /url: /terms
+        - heading "Payment" [level=3] [ref=e686]
+        - list [ref=e687]:
+          - listitem [ref=e688]: Cash on delivery
+          - listitem [ref=e689]: Bank transfer
+        - heading "Follow" [level=3] [ref=e690]
+        - list [ref=e691]:
+          - listitem [ref=e692]:
+            - link "Instagram" [ref=e693] [cursor=pointer]:
+              - /url: instagram.com/zenithman.store/?hl=en
+          - listitem [ref=e694]:
+            - link "TikTok" [ref=e695] [cursor=pointer]:
+              - /url: tiktok.com/@zenithman.stroe
+          - listitem [ref=e696]:
+            - link "Facebook" [ref=e697] [cursor=pointer]:
+              - /url: https://www.facebook.com/profile.php?id=61594873882244
+    - generic [ref=e699]:
+      - paragraph [ref=e700]: © 2026 Zenith Mens. All rights reserved.
+      - paragraph [ref=e701]: Prices in PKR. Delivery 2–7 days.

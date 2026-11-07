@@ -1,67 +1,87 @@
-import Reveal from "@/components/ui/Reveal";
-
-type Project = {
-  tag: string;
-  title: string;
-  desc: string;
-  tech: string[];
-  lead?: boolean;
-};
-
-const PROJECTS: Project[] = [
-  {
-    tag: "AI Agent",
-    title: "Autonomous customer support agent",
-    desc: "An AI support agent that handles FAQs, booking requests, and customer follow-ups with memory retention and escalation logic.",
-    tech: ["OpenClaw", "RAG", "CRM"],
-    lead: true,
-  },
-  {
-    tag: "Automation",
-    title: "Lead generation & outreach agent",
-    desc: "Scrapes leads, qualifies prospects, generates outreach messages, and keeps the CRM up to date.",
-    tech: ["Python", "n8n"],
-  },
-  {
-    tag: "Infrastructure",
-    title: "OpenClaw task automation system",
-    desc: "Local agent workflows for autonomous browser tasks, file management, tool execution, and reporting.",
-    tech: ["OpenClaw", "Tools"],
-  },
-  {
-    tag: "Multi-Agent",
-    title: "E-commerce fraud detection",
-    desc: "A multi-agent system that detects fraudulent transactions using collaborative agents and shared signals.",
-    tech: ["Multi-Agent", "Python", "APIs"],
-  },
-];
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowUpRight, Github, Layers } from "lucide-react";
+import { projects } from "@/data/projects";
+import { profile } from "@/data/profile";
 
 export default function Projects() {
   return (
     <section className="section" id="projects">
       <div className="container">
-        <Reveal>
-          <h2 className="section-title">Selected work</h2>
-          <p className="section-sub">
-            Agent systems and automation built for real businesses.
-          </p>
-        </Reveal>
-        <div className="proj-list">
-          {PROJECTS.map((p, i) => (
-            <Reveal
-              key={p.title}
-              delay={(i % 2) * 0.08}
-              className={`proj-card glass${p.lead ? " lead" : ""}`}
-            >
-              <div className="pc-tag">{p.tag}</div>
-              <h4>{p.title}</h4>
-              <p>{p.desc}</p>
-              <div className="pc-tech">
-                {p.tech.map((t) => (
-                  <span key={t}>{t}</span>
-                ))}
+        <div className="section-head-row">
+          <div className="section-head" style={{ marginBottom: 0 }}>
+            <p className="eyebrow">Projects</p>
+            <h2 className="section-title">Selected engineering work.</h2>
+            <p className="section-sub">
+              Agent systems, MCP tooling, RAG products and automation — each with a
+              technical case study.
+            </p>
+          </div>
+          <a
+            className="hero-social"
+            href={profile.socials.github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Github size={16} strokeWidth={1.75} aria-hidden="true" /> More on GitHub
+          </a>
+        </div>
+
+        <div className="proj-grid" style={{ marginTop: "44px" }}>
+          {projects.map((p) => (
+            <article className="proj-card glass glass-hover" key={p.slug}>
+              <div className="proj-img">
+                {p.images[0] ? (
+                  <Image
+                    src={p.images[0]}
+                    alt={`${p.name} — architecture overview`}
+                    fill
+                    sizes="(max-width: 640px) 92vw, (max-width: 1100px) 45vw, 560px"
+                    priority={p.featured === true}
+                  />
+                ) : (
+                  <div className="proj-img-fallback" aria-hidden="true">
+                    <Layers size={34} strokeWidth={1.2} />
+                    <span style={{ fontSize: 11, fontFamily: "var(--font-mono)" }}>
+                      case study
+                    </span>
+                  </div>
+                )}
+                <span className="proj-overlay">{p.status === "shipped" ? "Live product" : p.status === "internal" ? "Internal / client build" : "Build"}</span>
               </div>
-            </Reveal>
+              <div className="proj-body">
+                <span className="proj-cat">{p.category}</span>
+                <h3>{p.name}</h3>
+                <p>{p.tagline}</p>
+                <div className="proj-tech">
+                  {p.stack.slice(0, 5).map((t) => (
+                    <span key={t}>{t}</span>
+                  ))}
+                  {p.stack.length > 5 && <span>+{p.stack.length - 5}</span>}
+                </div>
+                {p.draft ? (
+                  <span className="proj-draft-note">
+                    case study details under verification
+                  </span>
+                ) : (
+                  <div className="proj-links">
+                    <Link href={`/projects/${p.slug}`}>
+                      Read case study <ArrowUpRight size={15} aria-hidden="true" />
+                    </Link>
+                    {p.liveUrl && (
+                      <a className="live" href={p.liveUrl} target="_blank" rel="noopener noreferrer">
+                        Live site <ArrowUpRight size={15} aria-hidden="true" />
+                      </a>
+                    )}
+                    {p.repoUrl && (
+                      <a href={p.repoUrl} target="_blank" rel="noopener noreferrer">
+                        Repository <ArrowUpRight size={15} aria-hidden="true" />
+                      </a>
+                    )}
+                  </div>
+                )}
+              </div>
+            </article>
           ))}
         </div>
       </div>
