@@ -5,11 +5,11 @@ export type Agent = {
 };
 
 export const agents: Agent[] = [
-  { slug: "capybara", name: "Capybara", image: "/images/agents/agent-capybara.jpg" },
-  { slug: "cow", name: "Cow", image: "/images/agents/agent-cow.jpg" },
-  { slug: "tiger", name: "Tiger", image: "/images/agents/agent-tiger.jpg" },
-  { slug: "peace-bear", name: "Peace Bear", image: "/images/agents/agent-bear-peace.jpg" },
-  { slug: "backpack-bear", name: "Backpack Bear", image: "/images/agents/agent-bear-backpack.jpg" },
-  { slug: "blue-cap-bear", name: "Blue Cap Bear", image: "/images/agents/agent-bear-blue-cap.jpg" },
-  { slug: "cloud-bear", name: "Cloud Bear", image: "/images/agents/agent-cloud-bear.jpg" },
+  { slug: "frontend", name: "Frontend Agent", image: "/images/agents/agent-frontend.jpg" },
+  { slug: "backend", name: "Backend Agent", image: "/images/agents/agent-backend.jpg" },
+  { slug: "full-stack", name: "Full-Stack Agent", image: "/images/agents/agent-full-stack.jpg" },
+  { slug: "ui-ux", name: "UI/UX Agent", image: "/images/agents/agent-ui-ux.jpg" },
+  { slug: "qa-testing", name: "QA Testing Agent", image: "/images/agents/agent-qa-testing.jpg" },
+  { slug: "devops", name: "DevOps Agent", image: "/images/agents/agent-devops.jpg" },
+  { slug: "database", name: "Database Agent", image: "/images/agents/agent-database.jpg" },
 ];
