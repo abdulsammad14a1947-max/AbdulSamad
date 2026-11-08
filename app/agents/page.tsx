@@ -3,7 +3,6 @@ import Image from "next/image";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { agents } from "@/data/agents";
-import { creativePosts } from "@/data/creative";
 import { profile } from "@/data/profile";
 
 const breadcrumbsJsonLd = {
@@ -18,11 +17,11 @@ const breadcrumbsJsonLd = {
 export const metadata: Metadata = {
   title: "AI Agents — Abdul Samad's agent roster",
   description:
-    "The AI agent roster of Abdul Samad, Agentic AI Engineer — seven agents with avatars, plus a creative showcase of recent posts: campaign photography, product edits, and video.",
+    "The AI agent roster of Abdul Samad, Agentic AI Engineer — seven AI agents with avatars: Frontend, Backend, Full-Stack, UI/UX, QA Testing, DevOps and Database.",
   alternates: { canonical: "/agents" },
   openGraph: {
     title: "Abdul Samad — AI Agent Roster",
-    description: "Seven agents, seven avatars, plus selected creative output — photos and video.",
+    description: "Seven agents, seven avatars — Abdul Samad's AI agent roster.",
     images: [{ url: `${profile.siteUrl}/og`, width: 1200, height: 630 }],
   },
 };
@@ -47,9 +46,7 @@ export default function AgentsPage() {
               My AI agents.
             </h1>
             <p className="section-sub" style={{ maxWidth: 640 }}>
-              Seven agents, seven avatars — my roster in one place. Below: a
-              creative showcase of recent posts — campaign photography, product
-              edits, and video.
+              Seven agents, seven avatars — my roster in one place.
             </p>
           </div>
         </section>
@@ -85,71 +82,6 @@ export default function AgentsPage() {
           </div>
           <p className="agents-note">Tap any avatar to view it full size.</p>
         </div>
-
-        <section className="section" id="creative">
-          <div className="container">
-            <div className="section-head">
-              <p className="eyebrow">Creative output</p>
-              <h2 className="section-title">Posts &amp; showcases.</h2>
-              <p className="section-sub">
-                Recent posts: fashion campaigns, faceless portraits, product
-                edits with the logos removed, and short-form video — photos open
-                full size, videos play inline.
-              </p>
-            </div>
-
-            <div className="cert-gallery">
-              {creativePosts.map((p) =>
-                p.type === "video" ? (
-                  <div
-                    key={p.slug}
-                    className="cert-card glass media-card video-card"
-                    id={p.slug}
-                  >
-                    <div className="cert-thumb">
-                      <video
-                        src={p.file}
-                        controls
-                        preload="metadata"
-                        playsInline
-                        aria-label={`${p.title} video`}
-                      />
-                    </div>
-                    <div className="cert-info">
-                      <h4>{p.title}</h4>
-                      <p className="cert-inst">Video</p>
-                      <span className="cert-cat-tag">Post</span>
-                    </div>
-                  </div>
-                ) : (
-                  <a
-                    key={p.slug}
-                    className="cert-card glass glass-hover media-card"
-                    href={p.file}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`View ${p.title} full size`}
-                    id={p.slug}
-                  >
-                    <div className="cert-thumb">
-                      <Image
-                        src={p.file}
-                        alt={p.title}
-                        fill
-                        sizes="(max-width: 640px) 92vw, (max-width: 1100px) 45vw, 300px"
-                      />
-                    </div>
-                    <div className="cert-info">
-                      <h4>{p.title}</h4>
-                      <p className="cert-inst">Image</p>
-                      <span className="cert-cat-tag">Post</span>
-                    </div>
-                  </a>
-                )
-              )}
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
       <script
